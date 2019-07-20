@@ -1,0 +1,30 @@
+.banner {
+  --sections-btm-indent: 20px;
+
+  display: flex;
+  flex-direction: column;
+  background-image: url('../../img/index-background-mobile@1x.jpg');
+  background-repeat: no-repeat;
+}
+
+.banner__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px var(--page-lr-indent);
+}
+
+.banner__title {
+  margin-bottom: var(--sections-btm-indent);
+  color: var(--light-text-color);
+  text-align: center;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1;
+}
+
+.banner__sub-title {
+  margin-bottom: var(--sections-btm-indent);
+  color: var(--light-text-color);
+  text-transform: uppercase;
+}
