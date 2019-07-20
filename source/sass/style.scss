@@ -1,9 +1,25 @@
 @import 'fonts';
 @import 'variables';
 
+@import 'components/list';
+
 @import 'components/header';
+@import 'components/main-nav';
 
 body {
   font-family: 'Oswald';
-  background: red;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
