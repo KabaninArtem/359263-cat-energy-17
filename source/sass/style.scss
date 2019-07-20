@@ -2,10 +2,13 @@
 @import 'variables';
 
 @import 'components/list';
+@import 'components/link';
 @import 'components/buttons';
 @import 'components/circle';
 @import 'components/social';
 @import 'components/author-block';
+
+@import 'components/main';
 
 @import 'components/header';
 @import 'components/main-nav';
@@ -14,6 +17,10 @@
 @import 'components/programs-item';
 @import 'components/how-it-works';
 @import 'components/footer';
+
+@import 'components/catalog';
+@import 'components/catalog-item';
+@import 'components/see-all';
 
 body {
   font-family: 'Oswald';

@@ -3,6 +3,7 @@
 
   display: flex;
   flex-direction: column;
+  margin: 0 calc(var(--page-lr-indent) * -1);
   background-image: url('../../img/index-background-mobile@1x.jpg');
   background-repeat: no-repeat;
 }
