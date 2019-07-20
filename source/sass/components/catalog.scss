@@ -10,3 +10,7 @@
   font-weight: 400;
   border-bottom: 1px solid var(--border-color);
 }
+
+.catalog__list {
+  margin: 0 calc(var(--page-lr-indent) * -1);
+}
