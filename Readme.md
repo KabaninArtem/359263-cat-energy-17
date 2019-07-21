@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Артём Кабанин](https://up.htmlacademy.ru/adaptive/17/user/359263).
-* Наставник: `Неизвестно`.
+* Наставник: [Михон Кислый] (https://htmlacademy.ru/profile/smart-grizzly).
 
 ---
 
