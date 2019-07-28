@@ -14,3 +14,16 @@
 .footer__social {
   margin-bottom: 30px;
 }
+
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  .footer__social,
+  .footer__logo {
+    margin-bottom: 0;
+  }
+}

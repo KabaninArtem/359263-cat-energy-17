@@ -5,10 +5,16 @@
   width: 100%;
 }
 
-.author-block__text {
-
-}
-
 .author-block__logo {
   width: 40px;
+}
+
+@media (min-width: 768px) {
+  .author-block {
+    width: auto;
+  }
+
+  .author-block__text {
+    margin-right: 15px;
+  }
 }

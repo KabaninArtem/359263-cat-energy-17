@@ -8,6 +8,12 @@
 }
 
 
+@media (min-width: 768px) {
+  :root {
+    --page-lr-indent: 40px;
+  }
+}
+
 @media (min-width: 1200px) {
   :root {
     --page-lr-indent: 80px;

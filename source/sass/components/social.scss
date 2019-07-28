@@ -30,3 +30,13 @@
 .social__link--facebook {
   background-image: url('../../img/icon-fb.svg');
 }
+
+
+@media (min-width: 768px) {
+  .social {
+    width: auto;
+    padding: 0;
+    border-top: none;
+    border-bottom: none;
+  }
+}
