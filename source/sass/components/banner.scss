@@ -30,6 +30,10 @@
   text-transform: uppercase;
 }
 
+.banner__img--tablet {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .banner {
     --sections-btm-indent: 30px;
@@ -51,5 +55,25 @@
   .banner__sub-title {
     font-size: 21px;
     color: black;
+  }
+
+  .banner__button {
+    padding: 10px 20px;
+    width: auto;
+  }
+
+  .banner__img {
+    order: 1;
+    z-index: -1;
+  }
+
+  .banner__img--mobile {
+    display: none;
+  }
+
+  .banner__img--tablet {
+    display: block;
+    align-self: flex-end;
+    margin-top: -65px;
   }
 }
