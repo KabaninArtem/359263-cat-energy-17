@@ -1,4 +1,4 @@
-.see-all {
+.see-all__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,4 +21,23 @@
 .see-all__small-text {
   margin-bottom: 25px;
   font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .see-all {
+    margin-bottom: 0;
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+  }
+
+  .see-all__wrapper {
+    flex-grow: 1;
+    justify-content: space-between;
+    width: 100%;
+    padding: 80px 0 0;
+  }
+
+  .see-all__icon {
+    width: 70px;
+  }
 }

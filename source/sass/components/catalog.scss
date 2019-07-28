@@ -1,4 +1,7 @@
 .catalog {
+  --negative-small-indent: -50px;
+  --negative-big-indent: calc(var(--negative-small-indent, -50px) * 2);
+
   display: flex;
   flex-direction: column;
 }
@@ -13,4 +16,17 @@
 
 .catalog__list {
   margin: 0 calc(var(--page-lr-indent) * -1);
+}
+
+@media (min-width: 768px) {
+  .catalog__title {
+    border-bottom: none;
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: calc(var(--negative-big-indent) * -1 + 20px) var(--page-lr-indent) 0;
+  }
 }
