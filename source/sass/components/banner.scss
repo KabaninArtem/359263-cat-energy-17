@@ -29,3 +29,27 @@
   color: var(--light-text-color);
   text-transform: uppercase;
 }
+
+@media (min-width: 768px) {
+  .banner {
+    --sections-btm-indent: 30px;
+
+    background-image: none;
+  }
+
+  .banner__content {
+    align-items: flex-start;
+    padding: 30px 95px;
+  }
+
+  .banner__title {
+    font-size: 64px;
+    color: black;
+    text-align: left;
+  }
+
+  .banner__sub-title {
+    font-size: 21px;
+    color: black;
+  }
+}
