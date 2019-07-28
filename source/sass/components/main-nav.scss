@@ -1,0 +1,21 @@
+.main-nav {
+  line-height: 0;
+}
+
+.main-nav__toggle {
+  width: 30px;
+  height: 25px;
+  border: none;
+  background-color: transparent;
+  background-image: url('../../img/icon-mobile-menu.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-nav__list {
+  display: none;
+}
+
+.main-nav__list--active {
+  display: block;
+}

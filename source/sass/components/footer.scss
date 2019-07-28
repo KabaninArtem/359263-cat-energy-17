@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px var(--page-lr-indent) 10px;
+}
+
+.footer__logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.footer__social {
+  margin-bottom: 30px;
+}

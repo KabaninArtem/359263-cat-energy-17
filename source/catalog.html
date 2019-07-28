@@ -4,19 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Кэт энерджи каталог продукции</title>
 </head>
 <body>
-  <header class="header">
+  <header class="header header--border-btm">
     <a class="header__logo">
-      <img class="header__logo-img logo" src="" alt="Logo">
-    </a>
-    <a class="header__logo logo-text">
-      <img class="header__logo-img" src="" alt="Tex logo">
+      <img class="header__logo-img logo" src="img/logo-mobile.svg" alt="Logo">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
-        Открыть меню
+        <span class="visually-hidden">Открыть меню</span>
       </button>
       <ul class="main-nav__list list">
         <li class="list__item list__item--active">
@@ -42,12 +40,162 @@
         <li class="catalog__list-item list__item catalog-item">
           <div class="catalog-item__info">
             <div class="catalog-item__img-wrapper">
-              <img class="catalog-item__img" src="" alt="Catalog item image">
+              <img class="catalog-item__img" src="img/chicken-small-mobile@1x.jpg" alt="Catalog item image">
             </div>
             <div class="catalog-item__details">
               <div class="catalog-item__title">
-                <span class="catalog-item__name">Cat Energy</span>
-                <span class="catalog-item__type">Slim 500 г</span>
+                <span class="catalog-item__title-text">Cat Energy</span>
+                <span class="catalog-item__title-text">Slim 500 г</span>
+              </div>
+              <ul class="catalog-item__specifications-list list">
+                <li class="catalog-item__specifications-item list__item">
+                  <span class="catalog-item__specification">Объем</span>
+                  <span class="catalog-item__specification-value">1000г</span>
+                </li>
+
+                <li class="catalog-item__specifications-item list__item">
+                  <span class="catalog-item__specification">Вкус</span>
+                  <span class="catalog-item__specification-value">Курица</span>
+                </li>
+
+                <li class="catalog-item__specifications-item list__item">
+                  <span class="catalog-item__specification">Цена</span>
+                  <span class="catalog-item__specification-value">500 Р.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a class="button button--green">Заказать</a>
+        </li>
+        <li class="catalog__list-item list__item catalog-item">
+          <div class="catalog-item__info">
+            <div class="catalog-item__img-wrapper">
+              <img class="catalog-item__img" src="img/chicken-big-mobile@1x.jpg" alt="Catalog item image">
+            </div>
+            <div class="catalog-item__details">
+              <div class="catalog-item__title">
+                <span class="catalog-item__title-text">Cat Energy</span>
+                <span class="catalog-item__title-text">Pro 1000 г</span>
+              </div>
+              <ul class="catalog-item__specifications-list list">
+                <li class="catalog-item__specifications-item list__item">
+                  <span class="catalog-item__specification">Объем</span>
+                  <span class="catalog-item__specification-value">1000г</span>
+                </li>
+
+                <li class="catalog-item__specifications-item list__item">
+                  <span class="catalog-item__specification">Вкус</span>
+                  <span class="catalog-item__specification-value">Курица</span>
+                </li>
+
+                <li class="catalog-item__specifications-item list__item">
+                  <span class="catalog-item__specification">Цена</span>
+                  <span class="catalog-item__specification-value">1000 Р.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a class="button button--green">Заказать</a>
+        </li>
+        <li class="catalog__list-item list__item catalog-item">
+          <div class="catalog-item__info">
+            <div class="catalog-item__img-wrapper">
+              <img class="catalog-item__img" src="img/fish-small-mobile@1x.jpg" alt="Catalog item image">
+            </div>
+            <div class="catalog-item__details">
+              <div class="catalog-item__title">
+                <span class="catalog-item__title-text">Cat Energy</span>
+                <span class="catalog-item__title-text">Slim 500 г</span>
+              </div>
+              <ul class="catalog-item__specifications-list list">
+                <li class="catalog-item__specifications-item list__item">
+                  <span class="catalog-item__specification">Объем</span>
+                  <span class="catalog-item__specification-value">500г</span>
+                </li>
+
+                <li class="catalog-item__specifications-item list__item">
+                  <span class="catalog-item__specification">Вкус</span>
+                  <span class="catalog-item__specification-value">Рыба</span>
+                </li>
+
+                <li class="catalog-item__specifications-item list__item">
+                  <span class="catalog-item__specification">Цена</span>
+                  <span class="catalog-item__specification-value">700 Р.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a class="button button--green">Заказать</a>
+        </li>
+        <li class="catalog__list-item list__item catalog-item">
+          <div class="catalog-item__info">
+            <div class="catalog-item__img-wrapper">
+              <img class="catalog-item__img" src="img/fish-big-mobile@1x.jpg" alt="Catalog item image">
+            </div>
+            <div class="catalog-item__details">
+              <div class="catalog-item__title">
+                <span class="catalog-item__title-text">Cat Energy</span>
+                <span class="catalog-item__title-text">Slim 1000 г</span>
+              </div>
+              <ul class="catalog-item__specifications-list list">
+                <li class="catalog-item__specifications-item list__item">
+                  <span class="catalog-item__specification">Объем</span>
+                  <span class="catalog-item__specification-value">1000г</span>
+                </li>
+
+                <li class="catalog-item__specifications-item list__item">
+                  <span class="catalog-item__specification">Вкус</span>
+                  <span class="catalog-item__specification-value">Рыба</span>
+                </li>
+
+                <li class="catalog-item__specifications-item list__item">
+                  <span class="catalog-item__specification">Цена</span>
+                  <span class="catalog-item__specification-value">1000 Р.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a class="button button--green">Заказать</a>
+        </li>
+        <li class="catalog__list-item list__item catalog-item">
+          <div class="catalog-item__info">
+            <div class="catalog-item__img-wrapper">
+              <img class="catalog-item__img" src="img/buckwheat-small-mobile@1x.jpg" alt="Catalog item image">
+            </div>
+            <div class="catalog-item__details">
+              <div class="catalog-item__title">
+                <span class="catalog-item__title-text">Cat Energy</span>
+                <span class="catalog-item__title-text">Slim 500 г</span>
+              </div>
+              <ul class="catalog-item__specifications-list list">
+                <li class="catalog-item__specifications-item list__item">
+                  <span class="catalog-item__specification">Объем</span>
+                  <span class="catalog-item__specification-value">500г</span>
+                </li>
+
+                <li class="catalog-item__specifications-item list__item">
+                  <span class="catalog-item__specification">Вкус</span>
+                  <span class="catalog-item__specification-value">Гречка</span>
+                </li>
+
+                <li class="catalog-item__specifications-item list__item">
+                  <span class="catalog-item__specification">Цена</span>
+                  <span class="catalog-item__specification-value">400 Р.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a class="button button--green">Заказать</a>
+        </li>
+        <li class="catalog__list-item list__item catalog-item">
+          <div class="catalog-item__info">
+            <div class="catalog-item__img-wrapper">
+              <img class="catalog-item__img" src="img/buckwheat-big-mobile@1x.jpg" alt="Catalog item image">
+            </div>
+            <div class="catalog-item__details">
+              <div class="catalog-item__title">
+                <span class="catalog-item__title-text">Cat Energy</span>
+                <span class="catalog-item__title-text">Pro 1000 г</span>
               </div>
               <ul class="catalog-item__specifications-list list">
                 <li class="catalog-item__specifications-item list__item">
@@ -62,7 +210,7 @@
 
                 <li class="catalog-item__specifications-item list__item">
                   <span class="catalog-item__specification">Цена</span>
-                  <span class="catalog-item__specification-value">500 Р.</span>
+                  <span class="catalog-item__specification-value">700 Р.</span>
                 </li>
               </ul>
             </div>
@@ -71,38 +219,38 @@
         </li>
       </ul>
       <div class="see-all">
-        <img class="see-all__icon" src="" alt="Plus icon">
+        <img class="see-all__icon" src="img/icon-plus-mobile.svg" alt="Plus icon">
         <p class="see-all__text">Показать еще 100500 товаров</p>
-        <p class="see-all__text see-all__text--small">На самом деле вкусов гораздо больше1</p>
+        <p class="see-all__small-text">На самом деле вкусов гораздо больше!</p>
         <button type="button" class="button button--gray">Показать все</button>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <img class="footer__logo logo-text" src="" alt="Cat energy text logo">
-    <ul class="footer__social social">
-      <li class="social__item">
+    <img class="footer__logo logo-text" src="img/logo-footer.svg" alt="Footer logo">
+    <ul class="footer__social social list">
+      <li class="social__item list__item">
         <a class="social__link social__link--vkontakte">
-          Мы в Вконтакте
+          <span class="visually-hidden">Мы в Вконтакте</span>
         </a>
       </li>
 
-      <li class="social__item">
+      <li class="social__item list__item">
         <a class="social__link social__link--instagram">
-          Мы в Инстаграме
+          <span class="visually-hidden">Мы в Инстаграме</span>
         </a>
       </li>
 
-      <li class="social__item">
+      <li class="social__item list__item">
         <a class="social__link social__link--facebook">
-          Мы в Фейсбукеы
+          <span class="visually-hidden">Мы в Фейсбуке</span>
         </a>
       </li>
     </ul>
     <div class="footer__author author-block">
-      <img class="author-block__text-logo" src="" alt="HTML Academy">
-      <img class="author-block__logo" src="" alt="HTML Academy logo">
+      <span class="author-block__text">HTML Academy</span>
+      <img class="author-block__logo" src="img/htmlacademy.svg" alt="HTML Academy logo">
     </div>
   </footer>
 </body>
