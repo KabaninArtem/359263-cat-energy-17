@@ -9,6 +9,7 @@
 }
 
 .main-nav__list {
+  @include reset-list;
   display: none;
 }
 
