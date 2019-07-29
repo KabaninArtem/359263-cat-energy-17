@@ -43,7 +43,7 @@
   line-height: 1.2;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .how-it-works__list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -99,7 +99,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   .how-it-works__list {
     justify-content: space-between;
   }

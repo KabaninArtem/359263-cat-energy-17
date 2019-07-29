@@ -1,3 +1,6 @@
+$tablet-width: 768px;
+$desktop-width: 1300px;
+
 :root {
   --main-color: #67b738;
   --border-color: #d9d9d9;
@@ -8,13 +11,13 @@
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   :root {
     --page-lr-indent: 40px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $desktop-width) {
   :root {
     --page-lr-indent: 80px;
   }

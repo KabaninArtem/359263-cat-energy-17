@@ -9,7 +9,7 @@
   width: 40px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .author-block {
     width: auto;
   }

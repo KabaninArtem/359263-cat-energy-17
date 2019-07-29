@@ -18,7 +18,7 @@
   margin: 0 calc(var(--page-lr-indent) * -1);
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .catalog__title {
     border-bottom: none;
   }
