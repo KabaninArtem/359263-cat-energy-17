@@ -12,3 +12,32 @@
 .header__logo {
   width: 70%;
 }
+
+.header__logo-img--tablet,
+.header__logo-img--desktop {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    align-items: flex-end;
+  }
+
+  .header__logo {
+    width: 20%;
+  }
+
+  .header__logo-img--mobile {
+    display: none;
+  }
+
+  .header__logo-img--tablet {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header__logo {
+    width: 15%;
+  }
+}

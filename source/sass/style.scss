@@ -1,5 +1,6 @@
 @import 'common/fonts';
 @import 'common/variables';
+@import 'mixins/reset-list';
 
 @import 'components/list';
 @import 'components/link';
@@ -19,8 +20,8 @@
 @import 'components/footer';
 
 @import 'components/catalog';
-@import 'components/catalog-item';
 @import 'components/see-all';
+@import 'components/catalog-item';
 
 body {
   font-family: 'Oswald';

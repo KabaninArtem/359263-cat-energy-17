@@ -3,3 +3,7 @@
   flex-direction: column;
   padding: 10px 0;
 }
+
+.programs__list {
+    @include reset-list;
+}
