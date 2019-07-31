@@ -1,24 +1,21 @@
 $tablet-width: 768px;
 $desktop-width: 1300px;
 
-:root {
-  --main-color: #67b738;
-  --border-color: #d9d9d9;
-  --light-text-color: white;
-  --dark-text-color: black;
+$main-color: #67b738;
+$border-color: #d9d9d9;
+$light-text-color: white;
+$dark-text-color: black;
 
-  --page-lr-indent: 20px;
-}
+$page-lr-indent: 20px;
+
+$negative-small-indent: -50px;
+$negative-big-indent: calc((#{$negative-small-indent} -50px) * 2);
 
 
 @media (min-width: $tablet-width) {
-  :root {
-    --page-lr-indent: 40px;
-  }
+  $page-lr-indent: 40px;
 }
 
 @media (min-width: $desktop-width) {
-  :root {
-    --page-lr-indent: 80px;
-  }
+  $page-lr-indent: 80px;
 }

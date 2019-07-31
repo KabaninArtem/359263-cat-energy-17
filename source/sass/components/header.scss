@@ -2,11 +2,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px var(--page-lr-indent);
+  padding: 15px $page-lr-indent;
 }
 
 .header--border-btm {
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid $border-color;
 }
 
 .header__logo {

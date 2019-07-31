@@ -28,7 +28,7 @@
 
 .main-nav__list-item--active {
   position: relative;
-  border-bottom: 2px solid var(--main-color);
+  border-bottom: 2px solid $main-color;
 }
 
 @media (min-width: $tablet-width) {

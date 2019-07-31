@@ -8,13 +8,13 @@
 }
 
 .button--green {
-  color: var(--light-text-color);
-  border-color: var(--main-color);
-  background-color: var(--main-color);
+  color: $light-text-color;
+  border-color: $main-color;
+  background-color: $main-color;
 }
 
 .button--gray {
-  color: var(--dark-text-color);
+  color: $dark-text-color;
   border-color: #f2f2f2;
   background-color: #f2f2f2;
 }

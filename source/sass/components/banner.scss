@@ -1,9 +1,9 @@
-.banner {
-  --sections-btm-indent: 20px;
+$sections-btm-indent: 20px;
 
+.banner {
   display: flex;
   flex-direction: column;
-  margin: 0 calc(var(--page-lr-indent) * -1);
+  margin: 0 calc(#{$page-lr-indent} * -1);
   background-image: url('../../img/index-background-mobile@1x.jpg');
   background-repeat: no-repeat;
 }
@@ -12,12 +12,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px var(--page-lr-indent);
+  padding: 30px $page-lr-indent;
 }
 
 .banner__title {
-  margin-bottom: var(--sections-btm-indent);
-  color: var(--light-text-color);
+  margin-bottom: $sections-btm-indent;
+  color: $light-text-color;
   text-align: center;
   font-weight: 400;
   font-size: 36px;
@@ -25,8 +25,8 @@
 }
 
 .banner__sub-title {
-  margin-bottom: var(--sections-btm-indent);
-  color: var(--light-text-color);
+  margin-bottom: $sections-btm-indent;
+  color: $light-text-color;
   text-transform: uppercase;
 }
 
@@ -36,9 +36,9 @@
 }
 
 @media (min-width: $tablet-width) {
-  .banner {
-    --sections-btm-indent: 30px;
+  $sections-btm-indent: 30px;
 
+  .banner {
     background-image: none;
   }
 
@@ -48,12 +48,14 @@
   }
 
   .banner__title {
+    margin-bottom: $sections-btm-indent;
     font-size: 64px;
     color: black;
     text-align: left;
   }
 
   .banner__sub-title {
+    margin-bottom: $sections-btm-indent;
     font-size: 21px;
     color: black;
   }
