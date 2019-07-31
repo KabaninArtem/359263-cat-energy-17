@@ -10,9 +10,11 @@
 <body>
   <header class="header">
     <a class="header__logo">
-      <img class="header__logo-img header__logo-img--mobile logo" src="img/logo-mobile.svg" alt="Logo">
-      <img class="header__logo-img header__logo-img--tablet logo" src="img/logo-tablet.svg" alt="Logo">
-      <img class="header__logo-img header__logo-img--desktop logo" src="img/logo-desktop.svg" alt="Logo">
+      <picture>
+        <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+        <source srcset="img/logo-desktop.svg" media="(min-width: 1300px)">
+        <img src="img/logo-mobile.svg" class="header__logo-img logo"  alt="Logo">
+      </picture>
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -39,9 +41,11 @@
         <li class="catalog__list-item list__item catalog-item">
           <div class="catalog-item__info">
             <div class="catalog-item__img-wrapper">
-              <img class="catalog-item__img catalog-item__img--mobile catalog-item__img--small" src="img/chicken-small-mobile@1x.jpg" alt="Catalog item image">
-              <img class="catalog-item__img catalog-item__img--tablet catalog-item__img--small" src="img/chicken-small-tablet@1x.png" alt="Catalog item image">
-              <img class="catalog-item__img catalog-item__img--desktop catalog-item__img--small" src="img/chicken-small-desktop@1x.png" alt="Catalog item image">
+              <picture>
+                <source srcset="img/chicken-small-tablet@1x.png" media="(min-width: 768px)">
+                <source srcset="img/chicken-small-desktop@1x.png" media="(min-width: 1300px)">
+                <img src="img/chicken-small-mobile@1x.jpg" class="catalog-item__img catalog-item__img--small" alt="Catalog item image">
+              </picture>
             </div>
             <div class="catalog-item__details">
               <div class="catalog-item__title">
@@ -71,9 +75,11 @@
         <li class="catalog__list-item list__item catalog-item">
           <div class="catalog-item__info">
             <div class="catalog-item__img-wrapper">
-              <img class="catalog-item__img catalog-item__img--mobile catalog-item__img--big" src="img/chicken-big-mobile@1x.jpg" alt="Catalog item image">
-              <img class="catalog-item__img catalog-item__img--tablet catalog-item__img--big" src="img/chicken-big-tablet@1x.png" alt="Catalog item image">
-              <img class="catalog-item__img catalog-item__img--desktop catalog-item__img--big" src="img/chicken-big-desktop@1x.png" alt="Catalog item image">
+              <picture>
+                <source srcset="img/chicken-big-tablet@1x.png" media="(min-width: 768px)">
+                <source srcset="img/chicken-big-desktop@1x.png" media="(min-width: 1300px)">
+                <img src="img/chicken-big-mobile@1x.jpg" class="catalog-item__img catalog-item__img--big" alt="Catalog item image">
+              </picture>
             </div>
             <div class="catalog-item__details">
               <div class="catalog-item__title">
@@ -103,9 +109,11 @@
         <li class="catalog__list-item list__item catalog-item">
           <div class="catalog-item__info">
             <div class="catalog-item__img-wrapper">
-              <img class="catalog-item__img catalog-item__img--mobile catalog-item__img--small" src="img/fish-small-mobile@1x.jpg" alt="Catalog item image">
-              <img class="catalog-item__img catalog-item__img--tablet catalog-item__img--small" src="img/fish-small-tablet@1x.png" alt="Catalog item image">
-              <img class="catalog-item__img catalog-item__img--desktop catalog-item__img--small" src="img/fish-small-desktop@1x.png" alt="Catalog item image">
+              <picture>
+                <source srcset="img/fish-small-tablet@1x.png" media="(min-width: 768px)">
+                <source srcset="img/fish-small-desktop@1x.png" media="(min-width: 1300px)">
+                <img src="img/fish-small-mobile@1x.jpg" class="catalog-item__img catalog-item__img--small" alt="Catalog item image">
+              </picture>
             </div>
             <div class="catalog-item__details">
               <div class="catalog-item__title">
@@ -135,9 +143,11 @@
         <li class="catalog__list-item list__item catalog-item">
           <div class="catalog-item__info">
             <div class="catalog-item__img-wrapper">
-              <img class="catalog-item__img catalog-item__img--mobile catalog-item__img--big" src="img/fish-big-mobile@1x.jpg" alt="Catalog item image">
-              <img class="catalog-item__img catalog-item__img--tablet catalog-item__img--big" src="img/fish-big-tablet@1x.png" alt="Catalog item image">
-              <img class="catalog-item__img catalog-item__img--desktop catalog-item__img--big" src="img/fish-big-desktop@1x.png" alt="Catalog item image">
+              <picture>
+                <source srcset="img/fish-big-tablet@1x.png" media="(min-width: 768px)">
+                <source srcset="img/fish-big-desktop@1x.png" media="(min-width: 1300px)">
+                <img src="img/fish-big-mobile@1x.jpg" class="catalog-item__img catalog-item__img--big" alt="Catalog item image">
+              </picture>
             </div>
             <div class="catalog-item__details">
               <div class="catalog-item__title">
@@ -167,9 +177,11 @@
         <li class="catalog__list-item list__item catalog-item">
           <div class="catalog-item__info">
             <div class="catalog-item__img-wrapper">
-              <img class="catalog-item__img catalog-item__img--mobile catalog-item__img--small" src="img/buckwheat-small-mobile@1x.jpg" alt="Catalog item image">
-              <img class="catalog-item__img catalog-item__img--tablet catalog-item__img--small" src="img/buckwheat-small-tablet@1x.png" alt="Catalog item image">
-              <img class="catalog-item__img catalog-item__img--desktop catalog-item__img--small" src="img/buckwheat-small-desktop@1x.png" alt="Catalog item image">
+              <picture>
+                <source srcset="img/buckwheat-small-tablet@1x.png" media="(min-width: 768px)">
+                <source srcset="img/buckwheat-small-desktop@1x.png" media="(min-width: 1300px)">
+                <img src="img/buckwheat-small-mobile@1x.jpg" class="catalog-item__img catalog-item__img--small" alt="Catalog item image">
+              </picture>
             </div>
             <div class="catalog-item__details">
               <div class="catalog-item__title">
@@ -199,9 +211,11 @@
         <li class="catalog__list-item list__item catalog-item">
           <div class="catalog-item__info">
             <div class="catalog-item__img-wrapper">
-              <img class="catalog-item__img catalog-item__img--mobile catalog-item__img--big" src="img/buckwheat-big-mobile@1x.jpg" alt="Catalog item image">
-              <img class="catalog-item__img catalog-item__img--tablet catalog-item__img--big" src="img/buckwheat-big-tablet@1x.png" alt="Catalog item image">
-              <img class="catalog-item__img catalog-item__img--desktop catalog-item__img--big" src="img/buckwheat-big-desktop@1x.png" alt="Catalog item image">
+              <picture>
+                <source srcset="img/buckwheat-big-tablet@1x.png" media="(min-width: 768px)">
+                <source srcset="img/buckwheat-big-desktop@1x.png" media="(min-width: 1300px)">
+                <img src="img/buckwheat-big-mobile@1x.jpg" class="catalog-item__img catalog-item__img--big" alt="Catalog item image">
+              </picture>
             </div>
             <div class="catalog-item__details">
               <div class="catalog-item__title">
@@ -231,9 +245,11 @@
         <li class="catalog__list-item list__item catalog-item">
           <div class="catalog-item__info">
             <div class="catalog-item__img-wrapper">
-              <img class="catalog-item__img catalog-item__img--mobile catalog-item__img--small" src="img/fish-small-mobile@1x.jpg" alt="Catalog item image">
-              <img class="catalog-item__img catalog-item__img--tablet catalog-item__img--small" src="img/fish-small-tablet@1x.png" alt="Catalog item image">
-              <img class="catalog-item__img catalog-item__img--desktop catalog-item__img--small" src="img/fish-small-desktop@1x.png" alt="Catalog item image">
+              <picture>
+                <source srcset="img/fish-small-tablet@1x.png" media="(min-width: 768px)">
+                <source srcset="img/fish-small-desktop@1x.png" media="(min-width: 1300px)">
+                <img src="img/fish-small-mobile@1x.jpg" class="catalog-item__img catalog-item__img--small" alt="Catalog item image">
+              </picture>
             </div>
             <div class="catalog-item__details">
               <div class="catalog-item__title">
@@ -298,5 +314,6 @@
       <img class="author-block__logo" src="img/htmlacademy.svg" alt="HTML Academy logo">
     </div>
   </footer>
+  <script type="text/javascript" src="polyfills/picturefill.min.js"></script>
 </body>
 </html>

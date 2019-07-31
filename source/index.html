@@ -8,9 +8,11 @@
   <body>
     <header class="header">
       <a class="header__logo">
-        <img class="header__logo-img header__logo-img--mobile logo" src="img/logo-mobile.svg" alt="Logo">
-        <img class="header__logo-img header__logo-img--tablet logo" src="img/logo-tablet.svg" alt="Logo">
-        <img class="header__logo-img header__logo-img--desktop logo" src="img/logo-desktop.svg" alt="Logo">
+        <picture>
+          <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+          <source srcset="img/logo-desktop.svg" media="(min-width: 1300px)">
+          <img src="img/logo-mobile.svg" class="header__logo-img logo"  alt="Logo">
+        </picture>
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -35,9 +37,11 @@
         <div class="banner__content">
           <h1 class="banner__title">Функциональное питание для котов</h1>
           <p class="banner__sub-title">Занялся собой? Займись котом!</p>
-          <img class="banner__img banner__img--mobile" src="../../img/index-can-mobile@1x.png" alt="Banner image preview">
-          <img class="banner__img banner__img--tablet" src="../../img/index-can-tablet@1x.jpg" alt="Banner image preview">
-          <img class="banner__img banner__img--desktop" src="../../img/index-can-desktop@1x.png" alt="Banner image preview">
+          <picture>
+            <source srcset="img/index-can-tablet@1x.jpg" media="(min-width: 768px)">
+            <source srcset="img/index-can-desktop@1x.png" media="(min-width: 1300px)">
+            <img src="img/index-can-mobile@1x.png" class="banner__img" alt="Banner image preview">
+          </picture>
           <a class="banner__button button button--green link" href="form.html">Подобрать программу</a>
         </div>
       </section>
@@ -146,5 +150,6 @@
         <img class="author-block__logo" src="img/htmlacademy.svg" alt="HTML Academy logo">
       </div>
     </footer>
+    <script type="text/javascript" src="polyfills/picturefill.min.js"></script>
   </body>
 </html>

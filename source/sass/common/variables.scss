@@ -9,7 +9,7 @@ $dark-text-color: black;
 $page-lr-indent: 20px;
 
 $negative-small-indent: -50px;
-$negative-big-indent: calc((#{$negative-small-indent} -50px) * 2);
+$negative-big-indent: calc(#{$negative-small-indent} * 2);
 
 
 @media (min-width: $tablet-width) {

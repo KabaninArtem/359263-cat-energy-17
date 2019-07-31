@@ -33,11 +33,6 @@
   font-weight: 400;
 }
 
-.catalog-item__img--tablet,
-.catalog-item__img--desktop {
-  display: none;
-}
-
 @media (min-width: $tablet-width) {
   $inner-indent: 30px;
   $items-indent: 5px;
@@ -58,14 +53,6 @@
 
   .catalog-item__img-wrapper {
     margin-bottom: 20px;
-  }
-
-  .catalog-item__img--mobile {
-    display: none;
-  }
-
-  .catalog-item__img--tablet {
-    display: block;
   }
 
   .catalog-item__img--small {

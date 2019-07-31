@@ -30,11 +30,6 @@ $sections-btm-indent: 20px;
   text-transform: uppercase;
 }
 
-.banner__img--tablet,
-.banner__img--desktop {
-  display: none;
-}
-
 @media (min-width: $tablet-width) {
   $sections-btm-indent: 30px;
 
@@ -71,14 +66,6 @@ $sections-btm-indent: 20px;
     align-self: flex-end;
     margin-top: -65px;
   }
-
-  .banner__img--mobile {
-    display: none;
-  }
-
-  .banner__img--tablet {
-    display: block;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -97,13 +84,5 @@ $sections-btm-indent: 20px;
   .banner__img {
     z-index: 1;
     align-self: center;
-  }
-
-  .banner__img--tablet {
-    display: none;
-  }
-
-  .banner__img--desktop {
-    display: block;
   }
 }
