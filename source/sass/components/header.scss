@@ -10,6 +10,21 @@
   width: 70%;
 }
 
+@media (max-width: $mobile-width-only) {
+  .header {
+    position: relative;
+    align-items: flex-start;
+  }
+
+  .header--opened-menu {
+    height: 258px;
+  }
+
+  .header__logo {
+    z-index: 1;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .header {
     align-items: flex-end;
