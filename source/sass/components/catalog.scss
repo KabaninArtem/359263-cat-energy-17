@@ -4,15 +4,15 @@
 }
 
 .catalog__title {
-  margin: 0 calc(#{$page-lr-indent} * -1);
-  padding: 20px $page-lr-indent;
+  margin: 0 calc(#{$page-mobile-lr-indent} * -1);
+  padding: 20px $page-mobile-lr-indent;
   font-size: 36px;
   font-weight: 400;
   border-bottom: 1px solid $border-color;
 }
 
 .catalog__list {
-  margin: 0 calc($page-lr-indent * -1);
+  margin: 0 calc($page-mobile-lr-indent * -1);
 }
 
 @media (min-width: $tablet-width) {
@@ -24,6 +24,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: calc(#{$negative-big-indent} * -1 + 20px) $page-lr-indent 0;
+    padding: calc(#{$negative-big-indent} * -1 + 20px) $page-tablet-lr-indent 0;
   }
 }
