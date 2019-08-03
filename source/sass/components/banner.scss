@@ -110,11 +110,18 @@ $sections-btm-indent: 20px;
 
   .banner__content {
     height: 100%;
-    padding: 30px 165px;
+    margin: -100px 0 0;
+    padding: 100px 165px 0;
+    justify-content: center;
   }
 
   .banner__title {
-    width: 550px;
+    width: 450px;
+    font-size: 54px;
+  }
+
+  .banner__sub-title {
+    font-size: 18px;
   }
 
   .banner__img-wrapper {

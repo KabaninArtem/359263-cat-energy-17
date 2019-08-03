@@ -12,11 +12,12 @@
 }
 
 .catalog__list {
-  margin: 0 calc($page-mobile-lr-indent * -1);
+  margin: 0 calc(#{$page-mobile-lr-indent} * -1);
 }
 
 @media (min-width: $tablet-width) {
   .catalog__title {
+    font-size: 58px;
     border-bottom: none;
   }
 

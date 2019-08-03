@@ -46,6 +46,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .how-it-works__title {
+    font-size: 58px;
+  }
+
   .how-it-works__list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -102,6 +106,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .how-it-works__title {
+    font-size: 46px;
+  }
+
   .how-it-works__list {
     justify-content: space-between;
   }

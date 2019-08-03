@@ -1,11 +1,8 @@
 .header {
   display: flex;
-  align-items: center;
+  // align-items: center;
   justify-content: space-between;
   padding: 15px $page-mobile-lr-indent;
-}
-
-.header--border-btm {
   border-bottom: 1px solid $border-color;
 }
 
@@ -17,6 +14,7 @@
   .header {
     align-items: flex-end;
     padding: 15px $page-tablet-lr-indent;
+    border-bottom: none;
   }
 
   .header__logo {
@@ -27,6 +25,7 @@
 @media (min-width: $desktop-width) {
   .header {
     padding: 15px $page-desktop-lr-indent;
+    border-bottom: none;
   }
   .header__logo {
     width: 15%;

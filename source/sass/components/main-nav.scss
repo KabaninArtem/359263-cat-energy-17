@@ -42,11 +42,11 @@
 }
 
 @media (min-width: $desktop-width) {
-  .main-nav__list-item {
+  .main-nav__list--white .main-nav__list-item {
     color: white;
   }
 
-  .main-nav__list-item--active {
+  .main-nav__list--white .main-nav__list-item--active {
     border-bottom: 2px solid white;
   }
 }
