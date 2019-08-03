@@ -17,6 +17,8 @@
 
 @media (min-width: $tablet-width) {
   .catalog__title {
+    margin: 0;
+    padding: 20px 0;
     font-size: 58px;
     border-bottom: none;
   }
@@ -25,6 +27,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: calc(#{$negative-big-indent} * -1 + 20px) $page-tablet-lr-indent 0;
+    margin: 0;
+    padding: calc(#{$negative-big-indent} * -1 + 20px) 0 0;
   }
 }
