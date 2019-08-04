@@ -93,7 +93,6 @@ $sections-btm-indent: 20px;
 
 @media (min-width: $desktop-width) {
   .banner {
-    z-index: -1;
     height: 696px;
     margin: -100px calc(#{$page-desktop-lr-indent} * -1) 60px;
     padding-top: 100px;
