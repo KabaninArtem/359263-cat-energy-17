@@ -107,6 +107,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav__list {
+    font-size: 18px;
+  }
+
   .main-nav__list--white .main-nav__list-item {
     color: white;
   }
