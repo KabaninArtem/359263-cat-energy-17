@@ -1,24 +1,15 @@
+$mobile-width-only: 767px;
 $tablet-width: 768px;
 $desktop-width: 1300px;
 
-:root {
-  --main-color: #67b738;
-  --border-color: #d9d9d9;
-  --light-text-color: white;
-  --dark-text-color: black;
+$main-color: #67b738;
+$border-color: #d9d9d9;
+$light-text-color: white;
+$dark-text-color: black;
 
-  --page-lr-indent: 20px;
-}
+$page-mobile-lr-indent: 20px;
+$page-tablet-lr-indent: 40px;
+$page-desktop-lr-indent: 80px;
 
-
-@media (min-width: $tablet-width) {
-  :root {
-    --page-lr-indent: 40px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  :root {
-    --page-lr-indent: 80px;
-  }
-}
+$negative-small-indent: -50px;
+$negative-big-indent: calc(#{$negative-small-indent} * 2);

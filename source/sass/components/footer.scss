@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 30px var(--page-lr-indent) 10px;
+  padding: 30px $page-mobile-lr-indent 10px;
 }
 
 .footer__logo {
@@ -20,10 +20,17 @@
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 40px;
+    padding: 30px $page-tablet-lr-indent 10px;
   }
 
   .footer__social,
   .footer__logo {
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    padding: 30px $page-desktop-lr-indent 10px;
   }
 }

@@ -6,17 +6,19 @@
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
-    <header class="header">
-      <a class="header__logo">
-        <img class="header__logo-img header__logo-img--mobile logo" src="img/logo-mobile.svg" alt="Logo">
-        <img class="header__logo-img header__logo-img--tablet logo" src="img/logo-tablet.svg" alt="Logo">
-        <img class="header__logo-img header__logo-img--desktop logo" src="img/logo-desktop.svg" alt="Logo">
+    <header class="header header--overlay-desktop">
+      <a href="index.html" class="header__logo">
+        <picture>
+          <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+          <source srcset="img/logo-desktop.svg" media="(min-width: 1300px)">
+          <img src="img/logo-mobile.svg" class="header__logo-img logo"  alt="Logo">
+        </picture>
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav__list">
+        <ul class="main-nav__list main-nav__list--white">
           <li class="list__item main-nav__list-item main-nav__list-item--active">
             <a href="/" class="link">Главная</a>
           </li>
@@ -35,19 +37,21 @@
         <div class="banner__content">
           <h1 class="banner__title">Функциональное питание для котов</h1>
           <p class="banner__sub-title">Занялся собой? Займись котом!</p>
-          <img class="banner__img banner__img--mobile" src="../../img/index-can-mobile@1x.png" alt="Banner image preview">
-          <img class="banner__img banner__img--tablet" src="../../img/index-can-tablet@1x.jpg" alt="Banner image preview">
-          <img class="banner__img banner__img--desktop" src="../../img/index-can-desktop@1x.png" alt="Banner image preview">
+          <picture class="banner__img-wrapper">
+            <source srcset="img/index-can-tablet@1x.jpg" media="(min-width: 768px) and (max-width: 1299px)">
+            <source srcset="img/index-can-desktop@1x.png" media="(min-width: 1300px)">
+            <img src="img/index-can-mobile@1x.png" class="banner__img" alt="Banner image preview">
+          </picture>
           <a class="banner__button button button--green link" href="form.html">Подобрать программу</a>
         </div>
       </section>
       <section class="programs">
+        <h2 class="visually-hidden">Доступные программы</h2>
         <ul class="programs__list">
           <li class="programs-item list__item">
-            <div class="programs-item__wrapper">
               <div class="programs-item__header">
-                <div class="programs-item__circle programs-item__circle--header  circle circle--green">
-                  <img class="programs-item__logo programs-item__logo--slim" src="img/icon-cat-slim.svg">
+                <div class="programs-item__circle circle circle--green">
+                  <img class="programs-item__logo programs-item__logo--slim" src="img/icon-cat-slim.svg" alt='Slim program img'>
                 </div>
                 <p class="programs-item__title">Похудение</p>
               </div>
@@ -59,17 +63,12 @@
                 Каталог Slim
                 <img class="programs-item__arrow" src="img/icon-right-arrow-verylong.svg" alt="To slim details icon">
               </a>
-            </div>
-            <div class="programs-item__circle programs-item__circle--tablet  circle circle--green">
-              <img class="programs-item__logo programs-item__logo--slim" src="img/icon-cat-slim.svg">
-            </div>
           </li>
 
           <li class="programs-item list__item">
-            <div class="programs-item__wrapper">
               <div class="programs-item__header">
-                <div class="programs-item__circle programs-item__circle--header circle circle--green">
-                  <img class="programs-item__logo programs-item__logo--pro" src="img/icon-cat-pro.svg">
+                <div class="programs-item__circle circle circle--green">
+                  <img class="programs-item__logo programs-item__logo--pro" src="img/icon-cat-pro.svg" alt='Pro program img'>
                 </div>
                 <p class="programs-item__title">Набор массы</p>
               </div>
@@ -81,10 +80,6 @@
                 Каталог Pro
                 <img class="programs-item__arrow" src="img/icon-right-arrow-verylong.svg" alt="To pro details icon">
               </a>
-            </div>
-            <div class="programs-item__circle programs-item__circle--tablet  circle circle--green">
-              <img class="programs-item__logo programs-item__logo--pro" src="img/icon-cat-pro.svg">
-            </div>
           </li>
         </ul>
       </section>
@@ -156,5 +151,7 @@
         <img class="author-block__logo" src="img/htmlacademy.svg" alt="HTML Academy logo">
       </div>
     </footer>
+    <script src="js/picturefill.min.js"></script>
+    <script src="js/main-nav.js"></script>
   </body>
 </html>

@@ -9,23 +9,25 @@
 </head>
 <body>
   <header class="header">
-    <a class="header__logo">
-      <img class="header__logo-img header__logo-img--mobile logo" src="img/logo-mobile.svg" alt="Logo">
-      <img class="header__logo-img header__logo-img--tablet logo" src="img/logo-tablet.svg" alt="Logo">
-      <img class="header__logo-img header__logo-img--desktop logo" src="img/logo-desktop.svg" alt="Logo">
+    <a href="index.html" class="header__logo">
+      <picture>
+        <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+        <source srcset="img/logo-desktop.svg" media="(min-width: 1300px)">
+        <img src="img/logo-mobile.svg" class="header__logo-img logo"  alt="Logo">
+      </picture>
     </a>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <ul class="main-nav__list list">
-        <li class="list__item main-nav__list-item main-nav__list-item--active">
+      <ul class="main-nav__list">
+        <li class="list__item main-nav__list-item">
           <a href="/" class="link">Главная</a>
         </li>
         <li class="list__item main-nav__list-item">
           <a href="catalog.html" class="link">каталог продукции</a>
         </li>
-        <li class="list__item main-nav__list-item">
+        <li class="list__item main-nav__list-item main-nav__list-item--active">
           <a href="form.html" class="link">Подбор программы</a>
         </li>
       </ul>
@@ -62,5 +64,7 @@
       <img class="author-block__logo" src="img/htmlacademy.svg" alt="HTML Academy logo">
     </div>
   </footer>
+  <script src="js/picturefill.min.js"></script>
+  <script src="js/main-nav.js"></script>
 </body>
 </html>
