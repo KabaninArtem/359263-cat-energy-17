@@ -13,7 +13,7 @@
       <picture>
         <source srcset="img/logo-tablet.svg" media="(min-width: 768px) and (max-width: 1299px)">
         <source srcset="img/logo-desktop.svg" media="(min-width: 1300px)">
-        <img src="img/logo-mobile.svg" class="header__logo-img logo"  alt="Logo">
+        <img src="img/logo-mobile.svg" class="header__logo-img logo" alt="Logo">
       </picture>
     </a>
     <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -35,7 +35,91 @@
   </header>
 
   <main class="main">
+    <form action="">
+      <section class="cat-info">
+        <h1 class="cat-info__title">Подбор программы</h1>
+        <p class="cat-info__sub-title">Заполните программу и мы подберем программу для вашего кота</p>
+        <div class="cat-info__input-data">
+          <div class="cat-info__basic">
+            <label>
+              Имя:
+              <input type="text" required>
+            </label>
+            <label>
+              Вес (кг):
+              <input type="text" required>
+            </label>
+            <label>
+              Возраст (Лет):
+              <input type="text" required>
+            </label>
+          </div>
 
+          <div class="cat-info__program">
+            <label>
+              <input type="radio">
+              Похудение
+            </label>
+            <label>
+              <input type="radio">
+              Набор массы
+            </label>
+            <label>
+              <input type="radio">
+              Не знаю (Нужен ваш совет)
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <fieldset>
+        <legend>
+          Контактные данные (владельца кота)
+        </legend>
+        <div>
+          <label>
+            E-mail:
+            <input type="email" placeholder="kuklachev@gmail.com" required>
+          </label>
+          <label>
+            Телефон:
+            <input type="number" placeholder="8 (960) 900-60-90" required>
+          </label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Комментарий</legend>
+        <label>
+          <textarea name="" id="" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Дополнительно</legend>
+        <div class="">
+          <label>
+            <input type="checkbox">
+            Сахарозаменитель
+          </label>
+          <label>
+            <input type="checkbox">
+            Питьевая вода
+          </label>
+          <label>
+            <input type="checkbox">
+            Молоко
+          </label>
+          <label>
+            <input type="checkbox">
+            Витамины
+          </label>
+        </div>
+        <div>
+          <button type="submit">Отправить заявку</button>
+          <span>* - Обязательное поле</span>
+        </div>
+      </fieldset>
+
+    </form>
   </main>
 
   <footer class="footer">
