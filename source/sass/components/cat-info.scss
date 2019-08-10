@@ -2,32 +2,15 @@
   padding: 20px 0;
 }
 
-.cat-info__header {
-  padding: 0 $page-mobile-lr-indent;
-}
 
-.cat-info__title {
-  margin-bottom: 15px;
-  font-size: 36px;
-  font-weight: normal;
-}
-
-.cat-info__sub-title {
-  width: 250px;
-  font-size: 14px;
-  font-weight: normal;
-  text-transform: uppercase;
-}
 
 .cat-info__data-item {
   padding: $page-mobile-lr-indent;
-}
-
-.cat-info__data-item {
   border-bottom: 1px solid $border-color;
 }
 
 .cat-info__form-filed:not(:last-child) {
   margin-bottom: 15px;
 }
+
 
