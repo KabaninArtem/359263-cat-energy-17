@@ -1,33 +1,35 @@
-@import 'common/fonts';
-@import 'common/variables';
-@import 'mixins/reset-list';
-
-@import 'components/list';
-@import 'components/link';
-@import 'components/buttons';
-@import 'components/circle';
-@import 'components/social';
-@import 'components/author-block';
-
-@import 'components/main';
-
-@import 'components/header';
-@import 'components/main-nav';
-@import 'components/banner';
-@import 'components/programs';
-@import 'components/programs-item';
-@import 'components/how-it-works';
-@import 'components/footer';
-
-@import 'components/catalog';
-@import 'components/see-all';
-@import 'components/catalog-item';
+@import "common/fonts";
+@import "common/variables";
+@import "mixins/reset-list";
+@import "components/list";
+@import "components/link";
+@import "components/buttons";
+@import "components/check";
+@import "components/form";
+@import "components/form-field";
+@import "components/circle";
+@import "components/social";
+@import "components/author-block";
+@import "components/main";
+@import "components/header";
+@import "components/main-nav";
+@import "components/banner";
+@import "components/programs";
+@import "components/programs-item";
+@import "components/how-it-works";
+@import "components/footer";
+@import "components/catalog";
+@import "components/see-all";
+@import "components/catalog-item";
+@import "components/cat-info";
 
 body {
-  font-family: 'Oswald';
+  font-family: "Oswald", "Arial", "Tahoma", sans-serif;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -39,4 +41,20 @@ body {
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+
+.block-main-indents {
+  padding: 0 $page-mobile-lr-indent;
+}
+
+@media (min-width: $tablet-width) {
+  .block-main-indents {
+    padding: 0 $page-tablet-lr-indent;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .block-main-indents {
+    padding: 0 $page-desktop-lr-indent;
+  }
 }

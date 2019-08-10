@@ -1,0 +1,33 @@
+.form__fieldset {
+  position: relative;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  border-color: $main-color;
+}
+
+.form__fieldset-body {
+  padding: 30px 20px;
+}
+
+.form__fieldset-title {
+  padding: 0 20px;
+  font-size: 24px;
+}
+
+.form__fieldset-title--contacts {
+  width: 230px;
+  line-height: 1;
+}
+
+.form__submit-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 $page-mobile-lr-indent;
+}
+
+
+.form__submit-button {
+  margin-bottom: 20px;
+}

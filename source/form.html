@@ -34,88 +34,97 @@
     </nav>
   </header>
 
-  <main class="main">
-    <form action="">
+  <main>
+    <form class="form" action="">
       <section class="cat-info">
-        <h1 class="cat-info__title">Подбор программы</h1>
-        <p class="cat-info__sub-title">Заполните программу и мы подберем программу для вашего кота</p>
-        <div class="cat-info__input-data">
-          <div class="cat-info__basic">
-            <label>
-              Имя:
-              <input type="text" required>
+        <div class="cat-info__header">
+          <h1 class="cat-info__title">Подбор программы</h1>
+          <p class="cat-info__sub-title">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        </div>
+        <div class="cat-info__body">
+          <div class="cat-info__data-item">
+            <label class="form-field cat-info__form-filed">
+              <span class="form-field__label form-field__label--required">Имя:</span>
+              <input class="form-field__input" type="text" required>
             </label>
-            <label>
-              Вес (кг):
-              <input type="text" required>
+            <label class="form-field cat-info__form-filed">
+              <span class="form-field__label form-field__label--required">Вес (кг):</span>
+              <input class="form-field__input" type="text" required>
             </label>
-            <label>
-              Возраст (Лет):
-              <input type="text" required>
+            <label class="form-field cat-info__form-filed">
+              <span class="form-field__label">Возраст (лет):</span>
+              <input class="form-field__input" type="text">
             </label>
           </div>
 
-          <div class="cat-info__program">
-            <label>
-              <input type="radio">
+          <div class="cat-info__data-item">
+            <label class="check">
+              <input class="check__input visually-hidden" type="radio" name="program_type" value="slim">
+              <span class="check__box check__box--circle"></span>
               Похудение
             </label>
-            <label>
-              <input type="radio">
+            <label class="check">
+              <input class="check__input visually-hidden" type="radio" name="program_type" value="pro">
+              <span class="check__box check__box--circle"></span>
               Набор массы
             </label>
-            <label>
-              <input type="radio">
+            <label class="check">
+              <input class="check__input visually-hidden" type="radio" name="program_type" value="need_advice">
+              <span class="check__box check__box--circle"></span>
               Не знаю (Нужен ваш совет)
             </label>
           </div>
         </div>
       </section>
 
-      <fieldset>
-        <legend>
-          Контактные данные (владельца кота)
-        </legend>
-        <div>
-          <label>
-            E-mail:
-            <input type="email" placeholder="kuklachev@gmail.com" required>
+      <fieldset class="form__fieldset">
+        <legend class="form__fieldset-title form__fieldset-title--contacts">Контактные данные (владельца кота)</legend>
+        <div class="form__fieldset-body">
+          <label class="form-field">
+            <span class="form-field__label form-field__label--required">E-mail:</span>
+            <input class="form-field__input" type="email" placeholder="kuklachev@gmail.com" required>
           </label>
-          <label>
-            Телефон:
-            <input type="number" placeholder="8 (960) 900-60-90" required>
+          <label class="form-field">
+            <span class="form-field__label form-field__label--required">Телефон:</span>
+            <input class="form-field__input" type="number" placeholder="8 (960) 900-60-90" required>
           </label>
         </div>
       </fieldset>
-      <fieldset>
-        <legend>Комментарий</legend>
-        <label>
-          <textarea name="" id="" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
-        </label>
+      <fieldset class="form__fieldset">
+        <legend class="form__fieldset-title">Комментарий</legend>
+        <div class="form__fieldset-body">
+          <label class="form-field">
+            <textarea class="form-field__input" rows="8" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </label>
+        </div>
       </fieldset>
-      <fieldset>
-        <legend>Дополнительно</legend>
-        <div class="">
-          <label>
-            <input type="checkbox">
+      <fieldset class="form__fieldset">
+        <legend class="form__fieldset-title">Дополнительно</legend>
+        <div class="form__fieldset-body">
+          <label class="check">
+            <input class="check__input visually-hidden" type="checkbox">
+            <span class="check__box"></span>
             Сахарозаменитель
           </label>
-          <label>
-            <input type="checkbox">
+          <label class="check">
+            <input class="check__input visually-hidden" type="checkbox">
+            <span class="check__box"></span>
             Питьевая вода
           </label>
-          <label>
-            <input type="checkbox">
+          <label class="check">
+            <input class="check__input visually-hidden" type="checkbox">
+            <span class="check__box"></span>
             Молоко
           </label>
-          <label>
-            <input type="checkbox">
+          <label class="check">
+            <input class="check__input visually-hidden" type="checkbox">
+            <span class="check__box"></span>
             Витамины
           </label>
         </div>
-        <div>
-          <button type="submit">Отправить заявку</button>
-          <span>* - Обязательное поле</span>
+        <div class="form__submit-row">
+          <button class="form__submit-button button button--green" type="submit">Отправить заявку</button>
+          <span class="form__comment">* - Обязательное поле</span>
         </div>
       </fieldset>
 

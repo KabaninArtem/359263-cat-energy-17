@@ -1,0 +1,32 @@
+.form-field {
+  display: flex;
+  align-items: center;
+}
+
+.form-field:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.form-field__label {
+  margin-right: 15px;
+  text-transform: uppercase;
+}
+
+.form-field__input {
+  flex-grow: 1;
+  padding: 15px;
+  font-size: 16px;
+  resize: none;
+  text-transform: uppercase;
+  border: 1px solid $border-color;
+}
+
+.form-field__label--required {
+  position: relative;
+}
+
+.form-field__label--required::after {
+  position: absolute;
+  content: "*";
+  font-size: 18px;
+}

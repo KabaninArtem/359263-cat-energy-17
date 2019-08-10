@@ -1,0 +1,50 @@
+.check {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.check:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.check__box {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+  border: 1px solid $border-color;
+}
+
+.check__box--circle {
+  border-radius: 50%;
+}
+
+.check__box--circle::after {
+  overflow: hidden;
+  content: "";
+  display: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: $main-color;
+}
+
+.check__input:checked + .check__box {
+  background-image: url("../../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+}
+
+.check__input:checked + .check__box--circle {
+  background-image: none;
+}
+
+.check__input:checked + .check__box--circle::after {
+  display: block;
+}
