@@ -1,6 +1,7 @@
 .form {
   margin-bottom: 25px;
 }
+
 .form__header {
   padding: 0 $page-mobile-lr-indent;
 }
@@ -16,38 +17,6 @@
   font-size: 14px;
   font-weight: normal;
   text-transform: uppercase;
-}
-
-.form__fieldset {
-  position: relative;
-  border-left: none;
-  border-right: none;
-  border-bottom: none;
-  border-color: $main-color;
-}
-
-.form__fieldset--no-border {
-  border: none;
-}
-
-.form__fieldset-body {
-  padding: 30px 20px;
-}
-
-.form__fieldset-body--additional {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.form__fieldset-title {
-  padding: 0 20px;
-  font-size: 24px;
-}
-
-.form__fieldset-title--contacts {
-  width: 230px;
-  line-height: 1;
 }
 
 .form__cat-info {
@@ -96,15 +65,6 @@
     font-size: 21px;
   }
 
-  .form__fieldset {
-    padding: 0 $page-tablet-lr-indent;
-  }
-
-  .form__fieldset-body {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-
   .form__cat-info {
     margin-bottom: 60px;
   }
@@ -112,10 +72,6 @@
   .form__program-type {
     margin: 0;
     border: 1px solid $border-color;
-  }
-
-  .form__fieldset-body--additional {
-    flex-direction: row;
   }
 
   .form__submit-row {
@@ -129,10 +85,6 @@
   .form__submit-button {
     width: 75%;
     margin-bottom: 0;
-  }
-
-  .form__fieldset-body--additional .check {
-    width: 50%;
   }
 }
 
@@ -149,26 +101,6 @@
     padding: 0;
   }
 
-  .form__fieldset {
-    padding: 0 $page-desktop-lr-indent;
-  }
-
-  .form__fieldset-title {
-    margin-left: -20px;
-    font-size: 32px;
-  }
-
-  .form__fieldset-body {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .form__fieldset-title--contacts {
-    width: auto;
-  }
-
   .form__cat-info {
     margin-bottom: 0;
   }
@@ -181,7 +113,6 @@
 
   .form__cat-info,
   .form__program-type,
-  .form__fieldset-body--contacts .form-field,
   .form__submit-wrapper {
     width: 45%;
   }
@@ -197,9 +128,5 @@
 
   .form__comment {
     width: 50%;
-  }
-
-  .form__fieldset-body--additional .check {
-    width: 25%;
   }
 }

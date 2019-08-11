@@ -25,7 +25,7 @@
 @media (min-width: $tablet-width) {
   .location__address-wrapper {
     align-items: flex-start;
-    padding: 20px calc(#{$page-tablet-lr-indent} + 20px);
+    padding: 40px calc(#{$page-tablet-lr-indent} + 20px);
   }
 
   .location__title {
