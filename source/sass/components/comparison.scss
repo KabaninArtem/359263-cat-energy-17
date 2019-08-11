@@ -81,3 +81,13 @@
     background-color: $border-color;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .comparison__wrapper {
+    margin: 0;
+  }
+
+  .comparison__img {
+    margin-left: 0;
+  }
+}
