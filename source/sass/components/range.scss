@@ -4,6 +4,7 @@
 }
 
 .range__input {
+  display: none;
   height: 15px;
   width: 100%;
   transition: opacity 0.2s;
@@ -62,4 +63,18 @@
 
 .range__point--end {
   margin-left: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .range__input {
+    display: block;
+  }
+
+  .range__toggle {
+    display: none;
+  }
+
+  .range__point {
+    border-bottom: 1px dashed black;
+  }
 }

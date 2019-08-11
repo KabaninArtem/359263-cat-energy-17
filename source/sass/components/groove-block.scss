@@ -4,8 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 40px;
-  padding: 10px 20px 0;
+  padding-top: 10px;
   border: 2px solid $border-color;
 }
 
@@ -19,11 +18,20 @@
 .groove-block__title {
   z-index: 1;
   display: block;
-  width: 75%;
+  width: 60%;
   margin-bottom: -15px;
   font-size: 14px;
   line-height: 1;
   text-align: center;
   text-transform: lowercase;
   background-color: #f2f2f2;
+}
+
+@media (min-width: $tablet-width) {
+  .groove-block__title {
+    width: auto;
+    margin-bottom: -6px;
+    padding: 0 10px;
+    background-color: white;
+  }
 }

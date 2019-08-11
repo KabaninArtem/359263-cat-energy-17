@@ -29,6 +29,7 @@
 
 .example__groove-block {
   width: 45%;
+  margin-bottom: 40px;
 }
 
 .example__price {
@@ -46,11 +47,38 @@
 @media (min-width: $tablet-width) {
   .example {
     margin: 0 calc(#{$page-tablet-lr-indent} * -1) 0;
-    padding: 60px $page-tablet-lr-indent;
+    padding: 0 $page-tablet-lr-indent;
+    background-color: transparent;
   }
 
   .example__title {
     font-size: 58px;
+  }
+
+  .example__info {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .example__info-body {
+    width: 50%;
+  }
+
+  .example__groove-block {
+    margin-bottom: 0;
+  }
+
+  .example__price {
+    width: 175px;
+    font-size: 18px;
+    text-align: right;
+  }
+
+  .example__range {
+    position: absolute;
+    left: 50%;
+    bottom: 60px;
+    transform: translate(-50%);
   }
 }
 
