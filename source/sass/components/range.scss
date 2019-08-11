@@ -1,0 +1,65 @@
+.range {
+  display: flex;
+  align-items: center;
+}
+
+.range__input {
+  height: 15px;
+  width: 100%;
+  transition: opacity 0.2s;
+  border-radius: 10px;
+  background: $border-color;
+  display: none;
+}
+
+.range__input::-webkit-slider-thumb {
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.range__input::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.range__toggle {
+  position: relative;
+  flex-grow: 1;
+  display: block;
+  height: 14px;
+  padding: 0 2px;
+  border: 1px solid $border-color;
+  border-radius: 10px;
+}
+
+.range__toggle::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50%;
+  height: 70%;
+  border-radius: 10px;
+  background-color: $main-color;
+}
+
+.range__point {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.range__point--start {
+  margin-right: 15px;
+}
+
+.range__point--end {
+  margin-left: 15px;
+}

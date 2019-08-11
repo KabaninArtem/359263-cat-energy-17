@@ -1,0 +1,25 @@
+.comparison {
+  display: flex;
+  flex-direction: column;
+}
+
+.comparison__wrapper {
+  overflow: hidden;
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.comparison__item {
+  display: none;
+  width: 100%;
+}
+
+.comparison__img {
+  width: 100%;
+  height: auto;
+}
+
+.comparison__item--active {
+  display: block;
+}
+

@@ -127,41 +127,56 @@
         </li>
       </ul>
     </section>
-
     <section class="example">
       <h2 class="example__title">Живой пример</h2>
-      <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто изменив свой обычный корм на Cat Energy Slim. Отличный результат без
-         изнуряющих тренировок! При этом он не менял своих привычек и по прежнему спит по 16 часов в день.</p>
-      <div class=""groove-block>
-        <span class="groove-block__text">5кн</span>
-        <span class="groove-block__title">Снижение веса</span>
+      <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто изменив свой обычный корм на Cat Energy Slim.
+                               Отличный результат без
+                               изнуряющих тренировок! При этом он не менял своих привычек и по прежнему спит по 16 часов
+                               в день.</p>
+      <div class="example__info">
+        <div class="example__info-body">
+          <div class="groove-block example__groove-block">
+            <span class="groove-block__text">5кн</span>
+            <span class="groove-block__title">Снижение веса</span>
+          </div>
+          <div class="groove-block example__groove-block">
+            <span class="groove-block__text">60дней</span>
+            <span class="groove-block__title">Затрачено времени</span>
+          </div>
+        </div>
+        <span class="example__price">Затраты на питание: 15 000 руб.</span>
       </div>
-      <div class=""groove-block>
-        <span class="groove-block__text">60дней</span>
-        <span class="groove-block__title">Затрачено времени</span>
-      </div>
-      <span class="example__price">Затраты на питание: 15 000 руб.</span>
       <div class="comparison example__comparison">
-        <div class="comparison__before">
-          <picture>
-            <img src="" alt="Before program cat">
-          </picture>
+        <div class="comparison__wrapper">
+          <div class="comparison__item comparison__item--active comparison__item--before">
+            <picture>
+              <source srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x"
+                      media="(min-width: 768px) and (max-width: 1299px)">
+              <source srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x" media="(min-width: 1300px)">
+              <img class="comparison__img" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x"
+                   alt="Before program cat">
+            </picture>
+          </div>
+          <div class="comparison__item comparison__item--after">
+            <picture>
+              <source srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x"
+                      media="(min-width: 768px) and (max-width: 1299px)">
+              <source srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x" media="(min-width: 1300px)">
+              <img class="comparison__img" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x"
+                   alt="After program cat">
+            </picture>
+          </div>
         </div>
-        <div class="comparison__after">
-          <picture>
-            <img src="" alt="After program cat">
-          </picture>
-        </div>
-
-        <label class="range">
-          <span class="range__start"></span>
-          <input class="range__input" type="range" id="start" name="volume" min="0" max="11">
-          <span class="range__end"></span>
+        <label class="range example__range">
+          <span class="range__point range__point--start">Было</span>
+          <input class="range__inpudt" type="range" min="1" max="100">
+          <span class="range__toggle"></span>
+          <span class="range__point range__point--end">Стало</span>
         </label>
       </div>
     </section>
 
-    <section class="location">
+    <section class="location location--stretch">
       <div class="location__address-wrapper">
         <h3 class="location__title">Приглашаем к сотрудничеству Дилеров!</h3>
         <address class="location__address">
