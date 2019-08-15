@@ -37,7 +37,7 @@
 }
 
 .programs-item__title {
-  font-size: 20px;
+  font-size: 24px;
   text-transform: uppercase;
 }
 
@@ -45,7 +45,9 @@
   margin-bottom: 20px;
   padding-bottom: 25px;
   color: $dark-text-color;
-  font-weight: 400;
+  font-family: Arial, Tahoma, sans-serif;
+  font-size: 14px;
+  font-weight: 100;
   border-bottom: 1px solid #d9d9d9;
 }
 
@@ -84,11 +86,12 @@
   }
 
   .programs-item__text {
+    font-size: 16px;
     border-bottom: none;
   }
 
   .programs-item__to-details {
-    font-size: 21px;
+    font-size: 20px;
   }
 }
 

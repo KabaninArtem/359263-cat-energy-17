@@ -6,14 +6,15 @@
 
 .example__title {
   margin-bottom: 40px;
-  font-size: 32px;
-  font-weight: 500;
+  font-size: 36px;
+  font-weight: 400;
 }
 
 .example__text {
   margin-bottom: 40px;
-  font-size: 16px;
-  font-style: normal;
+  font-size: 14px;
+  font-family: Arial, Tahoma, sans-serif;
+  font-weight: normal;
 }
 
 .example__info {
@@ -33,8 +34,8 @@
 }
 
 .example__price {
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 14px;
+  font-weight: normal;
   text-align: center;
   text-transform: uppercase;
 }
@@ -52,7 +53,11 @@
   }
 
   .example__title {
-    font-size: 58px;
+    font-size: 60px;
+  }
+
+  .example__text {
+    font-size: 16px;
   }
 
   .example__info {
@@ -70,7 +75,7 @@
 
   .example__price {
     width: 175px;
-    font-size: 18px;
+    font-size: 20px;
     text-align: right;
   }
 
@@ -90,7 +95,6 @@
 
   .example__title {
     padding-left: $page-desktop-lr-indent;
-    font-size: 46px;
   }
 
   .example__info {

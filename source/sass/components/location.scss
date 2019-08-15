@@ -17,13 +17,20 @@
   background-color: #f2f2f2;
 }
 
+.location__address-wrapper--white {
+  background-color: white;
+}
+
 .location__title {
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: normal;
   text-transform: uppercase;
 }
 
 .location__address {
+  font-size: 14px;
   font-style: normal;
+  font-family: Arial, Tahoma, sans-serif;
 }
 
 @media (min-width: $tablet-width) {
@@ -66,9 +73,11 @@
 
   .location__title {
     width: 200px;
+    font-size: 20px;
   }
 
   .location__address {
     width: 145px;
+    font-size: 16px;
   }
 }
