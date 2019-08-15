@@ -37,6 +37,10 @@
     padding: 0 $page-tablet-lr-indent;
   }
 
+  .fieldset__title {
+    font-size: 36px;
+  }
+
   .fieldset__body {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -58,7 +62,7 @@
 
   .fieldset__title {
     margin-left: -20px;
-    font-size: 32px;
+    font-size: 36px;
   }
 
   .fieldset__body {
