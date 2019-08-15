@@ -93,6 +93,22 @@
     font-size: 46px;
   }
 
+  .example__info {
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+
+  .example__info-body {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .example__price {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
   .example__body {
     display: flex;
     justify-content: space-between;

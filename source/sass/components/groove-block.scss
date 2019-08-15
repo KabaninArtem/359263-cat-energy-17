@@ -35,3 +35,9 @@
     background-color: white;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .groove-block__title {
+    background-color: #f2f2f2;
+  }
+}
