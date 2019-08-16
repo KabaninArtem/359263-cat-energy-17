@@ -61,7 +61,8 @@ $sections-btm-indent: 20px;
 
   .banner__title {
     margin-bottom: $sections-btm-indent;
-    font-size: 64px;
+    font-size: 60px;
+    font-weight: normal;
     color: black;
     text-align: left;
   }
@@ -108,18 +109,13 @@ $sections-btm-indent: 20px;
 
   .banner__content {
     height: 100%;
-    margin: 0;
+    margin: 100px 0 0 0;
     padding: 0 165px 0;
     justify-content: center;
   }
 
   .banner__title {
     width: 450px;
-    font-size: 54px;
-  }
-
-  .banner__sub-title {
-    font-size: 18px;
   }
 
   .banner__img-wrapper {

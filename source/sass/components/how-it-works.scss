@@ -5,8 +5,8 @@
 
 .how-it-works__title {
   margin-bottom: 40px;
-  font-size: 32px;
-  font-weight: 500;
+  font-size: 36px;
+  font-weight: 400;
 }
 
 .how-it-works__list {
@@ -41,13 +41,14 @@
   display: flex;
   align-items: center;
   height: inherit;
+  font-family: Arial, Tahoma, sans-serif;
   font-size: 14px;
-  line-height: 1.2;
+  font-weight: normal;
 }
 
 @media (min-width: $tablet-width) {
   .how-it-works__title {
-    font-size: 58px;
+    font-size: 60px;
   }
 
   .how-it-works__list {
@@ -72,7 +73,7 @@
     top: 0;
     right: 0;
     z-index: -1;
-    font-size: 225px;
+    font-size: 281px;
     line-height: 0.8;
     color: $border-color;
   }
@@ -95,7 +96,7 @@
 
   .how-it-works__text {
     width: 220px;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .how-it-works__img-wrapper {
@@ -106,10 +107,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .how-it-works__title {
-    font-size: 46px;
-  }
-
   .how-it-works__list {
     justify-content: space-between;
   }

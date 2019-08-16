@@ -16,6 +16,8 @@
 .main-nav__list-item {
   padding-bottom: 10px;
   text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .main-nav__list-item:not(:last-child) {
@@ -41,6 +43,10 @@
 
   .main-nav--closed .main-nav__list {
     display: none;
+  }
+
+  .main-nav__list-item {
+    height: 65px;
   }
 
   .main-nav--opened {
@@ -79,6 +85,7 @@
   .main-nav__list-item {
     display: flex;
     justify-content: center;
+    height: 65px;
     padding: 20px;
     border-top: 1px solid $border-color;
   }
@@ -103,6 +110,11 @@
 
   .main-nav__list {
     display: flex;
+  }
+
+  .main-nav__list-item {
+    font-size: 18px;
+    font-weight: normal;
   }
 }
 

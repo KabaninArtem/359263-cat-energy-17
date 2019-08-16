@@ -1,0 +1,93 @@
+.comparison {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.comparison__wrapper {
+  position: relative;
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.comparison__item {
+  display: none;
+  width: 100%;
+}
+
+.comparison__img {
+  width: 100%;
+  height: auto;
+}
+
+.comparison__item--active {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .comparison__wrapper {
+    height: 650px;
+    margin: 0 calc(#{$page-tablet-lr-indent} * -1) 0;
+  }
+
+  .comparison__img {
+    width: auto;
+    margin-left: 40px;
+  }
+
+  .comparison__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    display: block;
+    height: 100%;
+  }
+
+  .comparison__item::before,
+  .comparison__item::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    display: block;
+    width: 100%;
+  }
+
+  .comparison__item::before {
+    top: 0;
+    height: 35%;
+    background-color: white;
+  }
+
+  .comparison__item::after {
+    height: 65%;
+    bottom: 0;
+  }
+
+  .comparison__item--before {
+    width: 50%;
+  }
+
+  .comparison__item--after {
+    width: 100%;
+    z-index: -2;
+  }
+
+  .comparison__item--before::after {
+    background-color: #f2f2f2;
+  }
+
+  .comparison__item--after::after {
+    background-color: $border-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comparison__wrapper {
+    margin: 0;
+  }
+
+  .comparison__img {
+    margin-left: 0;
+  }
+}

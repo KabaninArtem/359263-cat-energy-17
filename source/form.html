@@ -11,9 +11,9 @@
   <header class="header">
     <a href="index.html" class="header__logo">
       <picture>
-        <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+        <source srcset="img/logo-tablet.svg" media="(min-width: 768px) and (max-width: 1299px)">
         <source srcset="img/logo-desktop.svg" media="(min-width: 1300px)">
-        <img src="img/logo-mobile.svg" class="header__logo-img logo"  alt="Logo">
+        <img src="img/logo-mobile.svg" class="header__logo-img logo" alt="Logo">
       </picture>
     </a>
     <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -34,8 +34,115 @@
     </nav>
   </header>
 
-  <main class="main">
+  <main>
+    <form class="form" action="">
+      <div class="form__header">
+        <h1 class="form__title">Подбор программы</h1>
+        <p class="form__sub-title">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      </div>
+      <fieldset class="fieldset fieldset--no-border">
+        <legend class="fieldset__title visually-hidden">Данные кота</legend>
+        <div class="fieldset__body">
+          <div class="form__cat-info">
+            <label class="form-field cat-info__form-filed">
+              <span class="form-field__label form-field__label--required">Имя:</span>
+              <input class="form-field__input" type="text" required>
+            </label>
+            <label class="form-field cat-info__form-filed">
+              <span class="form-field__label form-field__label--required">Вес (кг):</span>
+              <input class="form-field__input" type="text" required>
+            </label>
+            <label class="form-field cat-info__form-filed">
+              <span class="form-field__label">Возраст (лет):</span>
+              <input class="form-field__input" type="text">
+            </label>
+          </div>
 
+          <div class="form__program-type">
+            <label class="check">
+              <input class="check__input visually-hidden" type="radio" name="program_type" value="slim">
+              <span class="check__box check__box--circle"></span>
+              Похудение
+            </label>
+            <label class="check">
+              <input class="check__input visually-hidden" type="radio" name="program_type" value="pro">
+              <span class="check__box check__box--circle"></span>
+              Набор массы
+            </label>
+            <label class="check">
+              <input class="check__input visually-hidden" type="radio" name="program_type" value="need_advice">
+              <span class="check__box check__box--circle"></span>
+              Не знаю (Нужен ваш совет)
+            </label>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <legend class="fieldset__title fieldset__title--contacts">Контактные данные (владельца кота)</legend>
+        <div class="fieldset__body fieldset__body--contacts">
+          <label class="form-field">
+            <span class="form-field__label form-field__label--required">E-mail:</span>
+            <input class="form-field__input" type="email" placeholder="kuklachev@gmail.com" required>
+          </label>
+          <label class="form-field">
+            <span class="form-field__label form-field__label--required">Телефон:</span>
+            <input class="form-field__input" type="number" placeholder="8 (960) 900-60-90" required>
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <legend class="fieldset__title">Комментарий</legend>
+        <div class="fieldset__body">
+          <label class="form-field">
+            <textarea class="form-field__input" rows="8" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <legend class="fieldset__title">Дополнительно</legend>
+        <div class="fieldset__body fieldset__body--additional">
+          <label class="check form__check">
+            <input class="check__input visually-hidden" type="checkbox">
+            <span class="check__box"></span>
+            Сахарозаменитель
+          </label>
+          <label class="check form__check">
+            <input class="check__input visually-hidden" type="checkbox">
+            <span class="check__box"></span>
+            Питьевая вода
+          </label>
+          <label class="check form__check">
+            <input class="check__input visually-hidden" type="checkbox">
+            <span class="check__box"></span>
+            Молоко
+          </label>
+          <label class="check form__check">
+            <input class="check__input visually-hidden" type="checkbox">
+            <span class="check__box"></span>
+            Витамины
+          </label>
+        </div>
+        <div class="form__submit-row">
+          <div class="form__submit-wrapper">
+            <button class="form__submit-button button button--green" type="submit">Отправить заявку</button>
+          </div>
+          <span class="form__comment">* - Обязательное поле</span>
+        </div>
+      </fieldset>
+    </form>
+    <section class="location">
+      <div class="location__address-wrapper">
+        <h3 class="location__title">Приглашаем к сотрудничеству Дилеров!</h3>
+        <address class="location__address">
+          ул.Большая Конюшенная, д. 19/8
+          <span class="location__city">Санкт-Петербург</span>
+        </address>
+      </div>
+      <div class="location__map map" id="googleMap"></div>
+    </section>
   </main>
 
   <footer class="footer">
@@ -66,5 +173,8 @@
   </footer>
   <script src="js/picturefill.min.js"></script>
   <script src="js/main-nav.js"></script>
+  <script src="js/map.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1gIQFonNrMqmj4rG7gf1Rp_0uh75XVxA&callback=myMap">
+  </script>
 </body>
 </html>

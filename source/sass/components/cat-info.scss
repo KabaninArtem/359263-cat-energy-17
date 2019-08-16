@@ -1,0 +1,16 @@
+.cat-info {
+  padding: 20px 0;
+}
+
+
+
+.cat-info__data-item {
+  padding: $page-mobile-lr-indent;
+  border-bottom: 1px solid $border-color;
+}
+
+.cat-info__form-filed:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+

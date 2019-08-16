@@ -1,0 +1,138 @@
+.example {
+  margin: 40px calc(#{$page-mobile-lr-indent} * -1) 0;
+  padding: $page-mobile-lr-indent;
+  background-color: #f2f2f2;
+}
+
+.example__title {
+  margin-bottom: 40px;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.example__text {
+  margin-bottom: 40px;
+  font-size: 14px;
+  font-family: Arial, Tahoma, sans-serif;
+  font-weight: normal;
+}
+
+.example__info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+
+.example__info-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__groove-block {
+  width: 45%;
+  margin-bottom: 40px;
+}
+
+.example__price {
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.example__range {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    margin: 0 calc(#{$page-tablet-lr-indent} * -1) 0;
+    padding: 0 $page-tablet-lr-indent;
+    background-color: transparent;
+  }
+
+  .example__title {
+    font-size: 60px;
+  }
+
+  .example__text {
+    font-size: 16px;
+  }
+
+  .example__info {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .example__info-body {
+    width: 50%;
+  }
+
+  .example__groove-block {
+    margin-bottom: 0;
+  }
+
+  .example__price {
+    width: 175px;
+    font-size: 20px;
+    text-align: right;
+  }
+
+  .example__range {
+    position: absolute;
+    left: 50%;
+    bottom: 60px;
+    transform: translate(-50%);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    margin: 0 calc(#{$page-desktop-lr-indent} * -1) 0;
+    padding: 60px 0;
+  }
+
+  .example__title {
+    padding-left: $page-desktop-lr-indent;
+  }
+
+  .example__info {
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+
+  .example__info-body {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .example__price {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .example__body {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0 0 $page-desktop-lr-indent;
+    background-color: #f2f2f2;
+  }
+
+  .example__main-content {
+    width: calc(33% - #{$page-desktop-lr-indent});
+  }
+
+  .example__comparison {
+    z-index: 1;
+    width: 60%;
+    margin-top: -288px;
+  }
+
+  .example__range {
+    right: $page-desktop-lr-indent;
+    left: auto;
+    transform: translateX(0);
+  }
+}
