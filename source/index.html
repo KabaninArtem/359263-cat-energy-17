@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/style.min.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 <body>
@@ -40,9 +40,17 @@
         <h1 class="banner__title">Функциональное питание для котов</h1>
         <p class="banner__sub-title">Занялся собой? Займись котом!</p>
         <picture class="banner__img-wrapper">
-          <source srcset="img/index-can-tablet@1x.jpg" media="(min-width: 768px) and (max-width: 1299px)">
-          <source srcset="img/index-can-desktop@1x.png" media="(min-width: 1300px)">
-          <img src="img/index-can-mobile@1x.png" class="banner__img" alt="Banner image preview">
+          <source srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x"
+                  media="(min-width: 320px) and (max-width: 767px)">
+          <source srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x"
+                  media="(min-width: 768px) and (max-width: 1299px)">
+          <source srcset="img/index-can-desktop@1x.webp 1x, img/index-can-tablet@2x.webp 2x"
+                  media="(min-width: 1300px)">
+          <source srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x"
+                  media="(min-width: 768px) and (max-width: 1299px)">
+          <source srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x" media="(min-width: 1300px)">
+          <img src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" class="banner__img"
+               alt="Banner image preview">
         </picture>
         <a class="banner__button button button--green link" href="form.html">Подобрать программу</a>
       </div>
@@ -92,7 +100,10 @@
       <ul class="how-it-works__list">
         <li class="how-it-works__item how-it-works__item--1 list__item">
           <div class="how-it-works__img-wrapper">
-            <img class="how-it-works__img" src="img/advantage-leaf@1x.png" alt="Leaf icon">
+            <picture>
+
+              <img class="how-it-works__img" src="img/advantage-leaf@1x.png" alt="Leaf icon">
+            </picture>
           </div>
           <p class="how-it-works__text">
             Функциональное питание содержит только полезные питательные вещества.
