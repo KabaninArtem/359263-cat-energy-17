@@ -25,7 +25,7 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint .",
     "test": "npm run editorconfig",
-    "build": "gulp css",
+    "build": "gulp build",
     "start": "gulp server"
   },
   "editorconfig-cli": [

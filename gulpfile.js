@@ -13,21 +13,16 @@ var rename = require('gulp-rename');
 var csso = require('gulp-csso');
 var server = require('browser-sync').create();
 
-gulp.task('css', gulp.series(function (done) {
-  gulp.src('source/sass/style.scss')
+gulp.task('css', gulp.series(function () {
+  return gulp.src('source/sass/style.scss')
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
+    .pipe(postcss([autoprefixer()]))
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest('build/css'))
-    .pipe(server.stream());
-
-  done();
+    .pipe(gulp.dest('build/css'));
 }));
 
 gulp.task("images", function () {
