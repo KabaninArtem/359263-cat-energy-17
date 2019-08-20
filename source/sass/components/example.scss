@@ -90,7 +90,7 @@
 @media (min-width: $desktop-width) {
   .example {
     margin: 0 calc(#{$page-desktop-lr-indent} * -1) 0;
-    padding: 60px 0;
+    padding: 60px 0 0;
   }
 
   .example__title {

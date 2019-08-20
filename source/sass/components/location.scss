@@ -58,7 +58,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .catalog__location {
+  .location--stretch {
     margin: 0 calc(#{$page-desktop-lr-indent} * -1);
   }
 
