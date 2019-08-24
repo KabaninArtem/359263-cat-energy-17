@@ -131,8 +131,6 @@
   }
 
   .example__range {
-    right: $page-desktop-lr-indent;
-    left: auto;
-    transform: translateX(0);
+    width: 70%;
   }
 }

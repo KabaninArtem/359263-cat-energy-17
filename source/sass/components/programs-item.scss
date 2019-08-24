@@ -1,4 +1,4 @@
-  $circle-size: 50px;
+$circle-size: 50px;
 
 .programs-item {
   position: relative;
@@ -118,7 +118,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  $circle-size: 120px;
+  $circle-size: 100px;
 
   .programs-item {
     padding: 50px;

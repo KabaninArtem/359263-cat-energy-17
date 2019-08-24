@@ -54,18 +54,19 @@
   .how-it-works__list {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 90px;
   }
 
   .how-it-works__item {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 30%;
-    margin-right: 130px;
+    width: 40%;
   }
 
   .how-it-works__item:not(:last-child) {
-    margin-bottom: 100px;
+    margin-bottom: 150px;
   }
 
   .how-it-works__item::after {
@@ -100,8 +101,10 @@
   }
 
   .how-it-works__img-wrapper {
-    $wrap-size: 75px;
-
+    $wrap-size: 80px;
+    max-width: $wrap-size;
+    width: 100%;
+    height: $wrap-size;
     margin-bottom: 30px;
   }
 }
