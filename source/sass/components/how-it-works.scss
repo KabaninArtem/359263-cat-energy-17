@@ -41,7 +41,7 @@
   display: flex;
   align-items: center;
   height: inherit;
-  font-family: Arial, Tahoma, sans-serif;
+  font-family: "Arial", "Tahoma", sans-serif;
   font-size: 14px;
   font-weight: normal;
 }
@@ -80,19 +80,19 @@
   }
 
   .how-it-works__item--1::after {
-    content: '1';
+    content: "1";
   }
 
   .how-it-works__item--2::after {
-    content: '2';
+    content: "2";
   }
 
   .how-it-works__item--3::after {
-    content: '3';
+    content: "3";
   }
 
   .how-it-works__item--4::after {
-    content: '4';
+    content: "4";
   }
 
   .how-it-works__text {
