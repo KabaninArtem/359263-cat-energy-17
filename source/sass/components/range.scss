@@ -10,7 +10,6 @@
   transition: opacity 0.2s;
   border-radius: 10px;
   background: $border-color;
-  display: none;
 }
 
 .range__input::-webkit-slider-thumb {
@@ -18,7 +17,7 @@
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: #4CAF50;
+  background: #4caf50;
   cursor: pointer;
 }
 
@@ -41,7 +40,7 @@
 }
 
 .range__toggle::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   transform: translateY(-50%);

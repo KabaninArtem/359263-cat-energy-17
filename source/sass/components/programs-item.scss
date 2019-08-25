@@ -1,4 +1,4 @@
-  $circle-size: 50px;
+$circle-size: 50px;
 
 .programs-item {
   position: relative;
@@ -45,7 +45,7 @@
   margin-bottom: 20px;
   padding-bottom: 25px;
   color: $dark-text-color;
-  font-family: Arial, Tahoma, sans-serif;
+  font-family: "Arial", "Tahoma", sans-serif;
   font-size: 14px;
   font-weight: 100;
   border-bottom: 1px solid #d9d9d9;
@@ -118,7 +118,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  $circle-size: 120px;
+  $circle-size: 100px;
 
   .programs-item {
     padding: 50px;

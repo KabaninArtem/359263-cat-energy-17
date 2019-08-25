@@ -30,7 +30,7 @@
 .location__address {
   font-size: 14px;
   font-style: normal;
-  font-family: Arial, Tahoma, sans-serif;
+  font-family: "Arial", "Tahoma", sans-serif;
 }
 
 @media (min-width: $tablet-width) {
@@ -58,7 +58,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .catalog__location {
+  .location--stretch {
     margin: 0 calc(#{$page-desktop-lr-indent} * -1);
   }
 

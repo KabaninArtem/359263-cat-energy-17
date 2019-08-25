@@ -32,7 +32,7 @@
 
   .comparison__img {
     width: auto;
-    margin-left: 40px;
+    //margin-left: 40px;
   }
 
   .comparison__item {
@@ -40,8 +40,13 @@
     top: 0;
     left: 0;
     overflow: hidden;
-    display: block;
+    display: flex;
+    justify-content: center;
     height: 100%;
+
+    picture {
+      overflow: hidden;
+    }
   }
 
   .comparison__item::before,
@@ -66,6 +71,11 @@
 
   .comparison__item--before {
     width: 50%;
+
+    img {
+      position: absolute;
+      right: -345px;
+    }
   }
 
   .comparison__item--after {
@@ -84,6 +94,7 @@
 
 @media (min-width: $desktop-width) {
   .comparison__wrapper {
+    height: 100%;
     margin: 0;
   }
 
