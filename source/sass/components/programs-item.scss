@@ -38,6 +38,7 @@ $circle-size: 50px;
 
 .programs-item__title {
   font-size: 24px;
+  color: $dark-text-color;
   text-transform: uppercase;
 }
 
@@ -54,6 +55,7 @@ $circle-size: 50px;
 .programs-item__to-details {
   display: flex;
   align-items: center;
+  color: $dark-text-color;
   text-transform: uppercase;
 }
 
@@ -87,6 +89,7 @@ $circle-size: 50px;
 
   .programs-item__text {
     font-size: 16px;
+    color: $greyish-brown;
     border-bottom: none;
   }
 

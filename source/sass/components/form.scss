@@ -10,6 +10,7 @@
   margin-bottom: 15px;
   font-size: 36px;
   font-weight: normal;
+  color: $dark-text-color;
 }
 
 .form__sub-title {
@@ -17,6 +18,7 @@
   font-size: 14px;
   font-weight: normal;
   text-transform: uppercase;
+  color: $dark-text-color;
 }
 
 .form__cat-info {
@@ -43,6 +45,11 @@
 
 .form__submit-button {
   margin-bottom: 20px;
+}
+
+.form__comment {
+  font-size: 14px;
+  font-family: "Arial", "Tahoma", sans-serif;
 }
 
 @media (min-width: $tablet-width) {
@@ -85,6 +92,10 @@
   .form__submit-button {
     width: 75%;
     margin-bottom: 0;
+  }
+
+  .form__comment {
+    font-size: 16px;
   }
 }
 

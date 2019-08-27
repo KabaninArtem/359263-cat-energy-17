@@ -25,12 +25,14 @@
   font-size: 16px;
   font-weight: normal;
   text-transform: uppercase;
+  color: $dark-text-color;
 }
 
 .location__address {
   font-size: 14px;
   font-style: normal;
   font-family: "Arial", "Tahoma", sans-serif;
+  color: $greyish-brown;
 }
 
 @media (min-width: $tablet-width) {

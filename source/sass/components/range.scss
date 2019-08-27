@@ -51,9 +51,13 @@
 }
 
 .range__point {
+  cursor: pointer;
   font-size: 16px;
   font-weight: normal;
   text-transform: uppercase;
+  color: $dark-text-color;
+  border: none;
+  background-color: transparent;
 }
 
 .range__point--start {

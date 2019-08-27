@@ -8,6 +8,7 @@
   margin-bottom: 40px;
   font-size: 36px;
   font-weight: 400;
+  color: $dark-text-color;
 }
 
 .example__text {
@@ -15,6 +16,7 @@
   font-size: 14px;
   font-family: "Arial", "Tahoma", sans-serif;
   font-weight: normal;
+  color: $greyish-brown;
 }
 
 .example__info {
@@ -38,6 +40,7 @@
   font-weight: normal;
   text-align: center;
   text-transform: uppercase;
+  color: $dark-text-color;
 }
 
 .example__range {

@@ -11,6 +11,7 @@
 .form-field__label {
   margin-right: 15px;
   text-transform: uppercase;
+  color: #222222;
 }
 
 .form-field__input {
@@ -19,7 +20,13 @@
   font-size: 16px;
   resize: none;
   text-transform: uppercase;
+  color: $greyish-brown;
+  font-family: "Oswald", "Arial", "Tahoma", sans-serif;
   border: 1px solid $border-color;
+}
+
+.form-field::placeholder {
+  font-family: "Oswald", "Arial", "Tahoma", sans-serif;
 }
 
 .form-field__label--required {

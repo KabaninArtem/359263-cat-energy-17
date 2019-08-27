@@ -12,6 +12,7 @@
 .additional-product__title {
   font-size: 16px;
   margin-bottom: 15px;
+  color: $dark-text-color;
   text-transform: uppercase;
 }
 
@@ -29,6 +30,11 @@
 
 .additional-product__info {
   font-family: "Arial", "Tahoma", sans-serif;
+  color: $greyish-brown;
+}
+
+.additional-product__book {
+  font-family: "Oswald", "Arial", "Tahoma", sans-serif;
 }
 
 @media (min-width: $tablet-width) {
