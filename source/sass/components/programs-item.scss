@@ -59,6 +59,19 @@ $circle-size: 50px;
   text-transform: uppercase;
 }
 
+.programs-item__to-details:hover .programs-item__arrow {
+  width: 35px;
+}
+
+.programs-item__to-details:active {
+  opacity: 0.3;
+
+  .programs-item__arrow {
+    width: 35px;
+    opacity: 0.3;
+  }
+}
+
 .programs-item__arrow {
   width: 25px;
   margin-left: 10px;

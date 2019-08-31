@@ -24,6 +24,17 @@
   border-radius: 50%;
   background: #ffffff;
   cursor: pointer;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+  border: solid 1px #cdcdcd;
+
+  &:hover {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  &:active {
+    border: 2px solid #68b738;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+  }
 }
 
 .range__circle-control::after {
@@ -90,5 +101,9 @@
   .range__point {
     font-size: 20px;
     border-bottom: 1px dashed black;
+
+    &:hover {
+      border-style: solid;
+    }
   }
 }

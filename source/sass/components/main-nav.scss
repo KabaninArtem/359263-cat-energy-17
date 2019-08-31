@@ -21,6 +21,16 @@
   color: $dark-text-color;
 }
 
+.main-nav__list-item a {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .main-nav__list-item:not(:last-child) {
   margin-right: 25px;
 }

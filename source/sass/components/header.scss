@@ -9,6 +9,14 @@
 
 .header__logo {
   width: 70%;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 @media (max-width: $mobile-width-only) {
