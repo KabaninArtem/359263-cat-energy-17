@@ -15,14 +15,35 @@
 }
 
 .form-field__input {
+  outline: none;
   flex-grow: 1;
   padding: 15px;
   font-size: 16px;
   resize: none;
   text-transform: uppercase;
   color: $greyish-brown;
+  opacity: 0.3;
   font-family: "Oswald", "Arial", "Tahoma", sans-serif;
-  border: 1px solid $border-color;
+  border: 1px solid #cdcdcd;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 1;
+    border: 2px solid #444444;
+  }
+
+  &:focus {
+    opacity: 1;
+    border: 2px solid #444444;
+  }
+
+  //&:invalid {
+  //  opacity: 1;
+  //  border: 2px solid #ff8282;
+  //}
 }
 
 .form-field::placeholder {

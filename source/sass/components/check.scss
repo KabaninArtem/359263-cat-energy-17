@@ -3,6 +3,15 @@
   display: flex;
   align-items: center;
   text-transform: uppercase;
+  width: max-content;
+
+  &:hover .check__box {
+    border: 1px solid #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .check:not(:last-child) {
@@ -17,7 +26,7 @@
   width: 30px;
   height: 30px;
   margin-right: 15px;
-  border: 1px solid $border-color;
+  border: 1px solid #cdcdcd;
 }
 
 .check__box--circle {
