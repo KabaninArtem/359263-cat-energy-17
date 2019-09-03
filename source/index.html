@@ -9,17 +9,19 @@
 </head>
 <body>
   <header class="header header--overlay-desktop">
-    <a href="index.html" class="header__logo">
-      <picture>
-        <source srcset="img/logo-tablet.svg" media="(min-width: 768px) and (max-width: 1299px)">
-        <source srcset="img/logo-desktop.svg" media="(min-width: 1300px)">
-        <img src="img/logo-mobile.svg" class="header__logo-img logo" alt="Logo">
-      </picture>
-    </a>
-    <nav class="main-nav main-nav--closed main-nav--nojs">
-      <button class="main-nav__toggle" type="button">
+    <div class="header__title-block">
+      <a href="index.html" class="header__logo">
+        <picture>
+          <source srcset="img/logo-tablet.svg" media="(min-width: 768px) and (max-width: 1299px)">
+          <source srcset="img/logo-desktop.svg" media="(min-width: 1300px)">
+          <img src="img/logo-mobile.svg" class="header__logo-img logo" alt="Logo">
+        </picture>
+      </a>
+      <button class="header__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
+    </div>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <ul class="main-nav__list main-nav__list--white list">
         <li class="list__item main-nav__list-item main-nav__list-item--active">
           <a href="/" class="link">Главная</a>
