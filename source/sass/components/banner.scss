@@ -21,6 +21,12 @@ $sections-btm-indent: 20px;
   background-color: #62a742;
 }
 
+@media (min-resolution: 1.5dppx) {
+  .banner::after {
+    background-image: url("../../img/index-background-mobile@2x.jpg");
+  }
+}
+
 .banner__content {
   display: flex;
   flex-direction: column;
@@ -105,6 +111,12 @@ $sections-btm-indent: 20px;
     width: 50%;
     height: 696px;
     background-image: url("../../img/index-background-desktop@1x.jpg");
+  }
+
+  @media (min-resolution: 1.5dppx) {
+    .banner::after {
+      background-image: url("../../img/index-background-desktop@2x.jpg");
+    }
   }
 
   .banner__content {
