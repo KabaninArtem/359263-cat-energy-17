@@ -1,18 +1,18 @@
 .example {
-  margin: 40px calc(#{$page-mobile-lr-indent} * -1) 0;
-  padding: $page-mobile-lr-indent;
+  margin: 20px calc(#{$page-mobile-lr-indent} * -1) 0;
+  padding: $page-mobile-lr-indent $page-mobile-lr-indent  40px;
   background-color: #f2f2f2;
 }
 
 .example__title {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   font-size: 36px;
   font-weight: 400;
   color: $dark-text-color;
 }
 
 .example__text {
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   font-size: 14px;
   font-family: "Arial", "Tahoma", sans-serif;
   font-weight: normal;
@@ -32,7 +32,7 @@
 
 .example__groove-block {
   width: 45%;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .example__price {
@@ -57,10 +57,12 @@
 
   .example__title {
     font-size: 60px;
+    margin-bottom: 60px;
   }
 
   .example__text {
     font-size: 16px;
+    margin-bottom: 65px;
   }
 
   .example__info {
@@ -92,6 +94,7 @@
 
 @media (min-width: $desktop-width) {
   .example {
+    z-index: -5;
     margin: 0 calc(#{$page-desktop-lr-indent} * -1) 0;
     padding: 60px 0 0;
   }
@@ -106,34 +109,43 @@
   }
 
   .example__info-body {
-    width: 100%;
-    margin-bottom: 60px;
+    width: 85%;
+    margin-bottom: 55px;
+  }
+
+  .example__groove-block {
+    width: 45%;
   }
 
   .example__price {
     display: flex;
-    width: 100%;
+    width: 75%;
     justify-content: space-between;
   }
 
   .example__body {
     display: flex;
     justify-content: space-between;
-    padding: 65px 0 0 $page-desktop-lr-indent;
+    padding: 75px 0 0 $page-desktop-lr-indent;
     background-color: #f2f2f2;
   }
 
   .example__main-content {
-    width: calc(33% - #{$page-desktop-lr-indent});
+    width: 33%;
+  }
+
+  .example__text {
+    line-height: 1.4;
   }
 
   .example__comparison {
     z-index: 1;
     width: 60%;
-    margin-top: -288px;
+    margin-top: -265px;
   }
 
   .example__range {
     width: 70%;
+    bottom: 25px;
   }
 }
