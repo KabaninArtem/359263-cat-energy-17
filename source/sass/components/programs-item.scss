@@ -138,10 +138,11 @@ $circle-size: 50px;
 
   .programs-item {
     padding: 50px;
+    width: 46%;
   }
 
   .programs-item:not(:last-child) {
-    margin-right: 80px;
+    //margin-right: 80px;
     margin-bottom: 0;
   }
 
@@ -157,11 +158,6 @@ $circle-size: 50px;
 
   .programs-item__circle--tablet {
     display: none;
-  }
-
-  .programs__list {
-    display: flex;
-    justify-content: space-between;
   }
 
   .programs-item__logo--pro {

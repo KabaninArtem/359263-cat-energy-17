@@ -15,7 +15,7 @@
 }
 
 .check:not(:last-child) {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .check__box {
@@ -56,4 +56,25 @@
 
 .check__input:checked + .check__box--circle::after {
   display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .check {
+    font-size: 20px;
+  }
+
+  .check__box {
+    width: 40px;
+    height: 40px;
+  }
+
+  .check__box--circle {
+    width: 40px;
+    height: 40px;
+  }
+
+  .check__box--circle::after {
+    width: 16px;
+    height: 16px;
+  }
 }

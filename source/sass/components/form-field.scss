@@ -10,7 +10,7 @@
 }
 
 .form-field__label {
-  margin-right: 15px;
+  margin-right: 20px;
   text-transform: uppercase;
   color: #222222;
 }
@@ -18,7 +18,9 @@
 .form-field__input {
   outline: none;
   flex-grow: 1;
-  padding: 15px;
+  width: auto;
+  height: 100%;
+  padding: 10px;
   font-size: 16px;
   resize: none;
   text-transform: uppercase;
@@ -71,8 +73,35 @@
   font-size: 18px;
 }
 
-@media (min-width: 768px) {
+.form-field__input--textarea {
+  height: 150px;
+}
+
+@media (min-width: $tablet-width) {
   .form-field__icon {
     right: 20px;
+  }
+
+  .form-field__label {
+    margin-right: 25px;
+    font-size: 20px;
+  }
+
+  .form-field:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .form-field__input {
+    padding: 13px;
+  }
+
+  .form-field__input--textarea {
+    height: 170px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-field:last-child {
+    margin-bottom: 20px;
   }
 }

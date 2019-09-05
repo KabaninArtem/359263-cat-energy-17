@@ -1,9 +1,10 @@
 .content-section {
   position: relative;
-  border-top: 2px solid $main-color;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-bottom: 45px;
+  border-top: 2px solid $main-color;
 }
 
 .content-section--no-border {
@@ -11,7 +12,7 @@
 }
 
 .content-section__body {
-  padding: 30px 20px 0;
+  padding: 0 20px;
   width: 100%;
 }
 
@@ -19,40 +20,57 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-bottom: 35px;
 }
 
 .content-section__title {
-  margin-top: -25px;
+  margin-top: -22px;
+  margin-bottom: 30px;
   padding: 0 20px;
-  font-size: 24px;
+  font-size: 22px;
   background-color: #ffffff;
 }
 
 .content-section__title--contacts {
-  width: 240px;
+  width: 225px;
+  font-size: 22px;
+  line-height: 1.2;
 }
 
 @media (min-width: $tablet-width) {
   .content-section {
     padding: 0 $page-tablet-lr-indent;
+    margin-bottom: 35px;
   }
 
   .content-section__title {
-    margin-top: -34px;
-    font-size: 36px;
+    padding: 0 40px;
+    margin-top: -25px;
+    font-size: 33px;
   }
 
   .content-section__body {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 30px 40px 60px;
+  }
+
+  .content-section__body--contacts {
+    padding: 55px 40px 50px;
   }
 
   .content-section__body--additional {
     flex-direction: row;
+    padding: 20px 40px 25px;
+    justify-content: space-between;
+    margin-bottom: 0;
   }
 
   .content-section__body--additional .check {
-    width: 50%;
+    width: 45%;
+  }
+
+  .content-section__title--contacts {
+    width: auto;
+    margin-bottom: 20px;
   }
 }
 
@@ -65,14 +83,13 @@
     height: 54px;
     margin-left: -40px;
     padding: 0 40px;
-    font-size: 36px;
+    font-size: 34px;
   }
 
   .content-section__body {
     display: flex;
     justify-content: space-between;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 35px 0 40px;
   }
 
   .content-section__title--contacts {
@@ -80,10 +97,14 @@
   }
 
   .content-section__body--contacts .form-field {
-    width: 45%;
+    width: 47%;
+  }
+
+  .content-section__body--additional {
+    padding: 0 0 30px;
   }
 
   .content-section__body--additional .check {
-    width: 25%;
+    width: 20%;
   }
 }

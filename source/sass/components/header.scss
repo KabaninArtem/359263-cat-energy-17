@@ -11,7 +11,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 15px $page-mobile-lr-indent;
+  padding: 11px $page-mobile-lr-indent;
 }
 
 .header__logo {
@@ -28,8 +28,8 @@
 
 .header__toggle {
   display: none;
-  width: 30px;
-  height: 25px;
+  width: 23px;
+  height: 18px;
   margin-right: 0;
   border: none;
   background-image: url("../../img/icon-mobile-menu.svg");
@@ -60,7 +60,7 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    padding: 15px $page-tablet-lr-indent;
+    padding: 25px $page-tablet-lr-indent;
     border-bottom: none;
   }
 
