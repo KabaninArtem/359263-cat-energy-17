@@ -38,23 +38,39 @@ $circle-size: 50px;
 
 .programs-item__title {
   font-size: 24px;
+  color: $dark-text-color;
   text-transform: uppercase;
 }
 
 .programs-item__text {
-  margin-bottom: 20px;
-  padding-bottom: 25px;
+  margin-bottom: 17px;
+  padding-bottom: 20px;
   color: $dark-text-color;
   font-family: "Arial", "Tahoma", sans-serif;
   font-size: 14px;
   font-weight: 100;
+  line-height: 1.3;
   border-bottom: 1px solid #d9d9d9;
 }
 
 .programs-item__to-details {
   display: flex;
   align-items: center;
+  color: $dark-text-color;
   text-transform: uppercase;
+}
+
+.programs-item__to-details:hover .programs-item__arrow {
+  width: 35px;
+}
+
+.programs-item__to-details:active {
+  opacity: 0.3;
+
+  .programs-item__arrow {
+    width: 35px;
+    opacity: 0.3;
+  }
 }
 
 .programs-item__arrow {
@@ -74,7 +90,11 @@ $circle-size: 50px;
 
 @media (min-width: $tablet-width) {
   .programs-item {
-    padding: 60px;
+    padding: 60px 55px;
+  }
+
+  .programs-item__header {
+    margin-bottom: 20px;
   }
 
   .programs-item__wrapper {
@@ -87,6 +107,7 @@ $circle-size: 50px;
 
   .programs-item__text {
     font-size: 16px;
+    color: $greyish-brown;
     border-bottom: none;
   }
 
@@ -97,6 +118,10 @@ $circle-size: 50px;
 
 @media (min-width: $tablet-width) and (max-width: 1299px) {
   $circle-size: 200px;
+
+  .programs {
+    margin-bottom: 50px;
+  }
 
   .programs-item__circle {
     position: absolute;
@@ -109,11 +134,17 @@ $circle-size: 50px;
   }
 
   .programs-item__text {
-    width: 300px;
+    width: 380px;
+    margin-bottom: 30px;
+    line-height: 1.5;
   }
 
   .programs-item__logo--pro {
     width: calc(#{$circle-size} * 1.3);
+  }
+
+  .programs-item:not(:last-child) {
+    margin-bottom: 35px;
   }
 }
 
@@ -122,11 +153,16 @@ $circle-size: 50px;
 
   .programs-item {
     padding: 50px;
+    width: 46%;
   }
 
   .programs-item:not(:last-child) {
-    margin-right: 80px;
+    //margin-right: 80px;
     margin-bottom: 0;
+  }
+
+  .programs-item__header {
+    margin-bottom: 40px;
   }
 
   .programs-item__circle {
@@ -141,11 +177,6 @@ $circle-size: 50px;
 
   .programs-item__circle--tablet {
     display: none;
-  }
-
-  .programs__list {
-    display: flex;
-    justify-content: space-between;
   }
 
   .programs-item__logo--pro {

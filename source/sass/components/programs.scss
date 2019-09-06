@@ -1,9 +1,21 @@
 .programs {
   display: flex;
   flex-direction: column;
-  padding: 10px 0;
+  margin-bottom: 15px;
 }
 
 .programs__list {
   @include reset-list;
+}
+
+@media (min-width: $desktop-width) {
+  .programs {
+    margin-bottom: 65px;
+  }
+
+  .programs__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }

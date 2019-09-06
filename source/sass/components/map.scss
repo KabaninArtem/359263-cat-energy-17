@@ -1,4 +1,48 @@
 .map {
   width: 100%;
-  height: 500px;
+  height: 370px;
+}
+
+.map--no-js {
+  background-image: url("../../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-resolution: 1.5dppx) {
+  .map--no-js {
+    background-image: url("../../img/bg-map-mobile@2x.png");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .map {
+    height: 400px;
+  }
+
+  .map--no-js {
+    background-image: url("../../img/bg-map-tablet@1x.png");
+  }
+
+  @media (min-resolution: 1.5dppx) {
+    .map--no-js {
+      background-image: url("../../img/bg-map-tablet@2x.png");
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    height: 445px;
+  }
+
+  .map--no-js {
+    background-image: url("../../img/bg-map-desktop@1x.png");
+  }
+
+  @media (min-resolution: 1.5dppx) {
+    .map--no-js {
+      background-image: url("../../img/bg-map-desktop@2x.png");
+    }
+  }
 }

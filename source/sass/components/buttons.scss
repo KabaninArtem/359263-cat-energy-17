@@ -1,24 +1,45 @@
 .button {
   cursor: pointer;
   width: 100%;
-  padding: 15px;
+  padding: 7px 15px;
   font-size: 16px;
   text-align: center;
   text-transform: uppercase;
   border: 1px solid transparent;
   background: transparent;
+  text-decoration: none;
 }
 
 .button--green {
+  font-family: "Oswald", "Arial", "Tahoma", sans-serif;
   color: $light-text-color;
   border-color: $main-color;
   background-color: $main-color;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    opacity: 0.3;
+    background-color: #5eaa2f;
+  }
 }
 
 .button--gray {
-  color: $dark-text-color;
+  font-family: "Oswald", "Arial", "Tahoma", sans-serif;
+  color: $greyish-brown;
   border-color: #f2f2f2;
   background-color: #f2f2f2;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+    background-color: #ebebeb;
+  }
 }
 
 @media (min-width: $tablet-width) {

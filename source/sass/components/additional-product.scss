@@ -5,13 +5,14 @@
 }
 
 .additional-product:not(:last-child) {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   border-bottom: 1px solid $border-color;
 }
 
 .additional-product__title {
   font-size: 16px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  color: $dark-text-color;
   text-transform: uppercase;
 }
 
@@ -25,13 +26,27 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px;
+  font-size: 14px;
 }
 
 .additional-product__info {
   font-family: "Arial", "Tahoma", sans-serif;
+  color: $greyish-brown;
+}
+
+.additional-product__book {
+  font-family: "Oswald", "Arial", "Tahoma", sans-serif;
 }
 
 @media (min-width: $tablet-width) {
+  .additional-product {
+    padding-bottom: 25px;
+  }
+
+  .additional-product:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
   .additional-product__content {
     flex-direction: row;
     justify-content: space-between;
@@ -43,6 +58,7 @@
   }
 
   .additional-product__title {
+    margin-bottom: 20px;
     font-size: 20px;
   }
 }
@@ -64,5 +80,10 @@
 
   .additional-product__body {
     width: 45%;
+  }
+
+  .additional-product:not(:last-child) {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
   }
 }

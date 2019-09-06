@@ -3,10 +3,19 @@
   display: flex;
   align-items: center;
   text-transform: uppercase;
+  width: max-content;
+
+  &:hover .check__box {
+    border: 1px solid #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .check:not(:last-child) {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .check__box {
@@ -17,7 +26,7 @@
   width: 30px;
   height: 30px;
   margin-right: 15px;
-  border: 1px solid $border-color;
+  border: 1px solid #cdcdcd;
 }
 
 .check__box--circle {
@@ -47,4 +56,25 @@
 
 .check__input:checked + .check__box--circle::after {
   display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .check {
+    font-size: 20px;
+  }
+
+  .check__box {
+    width: 40px;
+    height: 40px;
+  }
+
+  .check__box--circle {
+    width: 40px;
+    height: 40px;
+  }
+
+  .check__box--circle::after {
+    width: 16px;
+    height: 16px;
+  }
 }

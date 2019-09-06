@@ -1,15 +1,18 @@
 .form {
+  padding-top: 18px;
   margin-bottom: 25px;
 }
 
 .form__header {
   padding: 0 $page-mobile-lr-indent;
+  margin-bottom: 40px;
 }
 
 .form__title {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   font-size: 36px;
   font-weight: normal;
+  color: $dark-text-color;
 }
 
 .form__sub-title {
@@ -17,6 +20,8 @@
   font-size: 14px;
   font-weight: normal;
   text-transform: uppercase;
+  color: $dark-text-color;
+  line-height: 1.2;
 }
 
 .form__cat-info {
@@ -34,6 +39,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   padding: 0 $page-mobile-lr-indent;
 }
 
@@ -45,9 +51,14 @@
   margin-bottom: 20px;
 }
 
+.form__comment {
+  font-size: 14px;
+  font-family: "Arial", "Tahoma", sans-serif;
+}
+
 @media (min-width: $tablet-width) {
   .form {
-    margin-bottom: 60px;
+    margin-bottom: 75px;
   }
 
   .form__header {
@@ -56,26 +67,30 @@
 
   .form__title {
     margin-bottom: 40px;
-    font-size: 62px;
+    font-size: 60px;
   }
 
   .form__sub-title {
     width: 450px;
-    padding: 0 20px;
-    font-size: 21px;
+    padding: 0 40px;
+    font-size: 20px;
+    line-height: 1.4;
   }
 
   .form__cat-info {
-    margin-bottom: 60px;
+    margin-bottom: 70px;
   }
 
   .form__program-type {
     margin: 0;
+    //padding: 40px 30px;
+    padding: 25px 30px;
     border: 1px solid $border-color;
   }
 
   .form__submit-row {
     flex-direction: row;
+    padding: 0 40px;
   }
 
   .form__submit-wrapper {
@@ -83,21 +98,37 @@
   }
 
   .form__submit-button {
-    width: 75%;
+    width: 90%;
     margin-bottom: 0;
+  }
+
+  .form__comment {
+    font-size: 16px;
+  }
+
+  .form__check:not(:last-child),
+  .form__check:last-child {
+    margin-bottom: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form {
     margin-bottom: 90px;
+    padding-top: 10px;
   }
 
   .form__header {
     padding: 0 $page-desktop-lr-indent;
+    margin-bottom: 30px;
+  }
+
+  .form__title {
+    margin-bottom: 45px;
   }
 
   .form__sub-title {
+    width: 360px;
     padding: 0;
   }
 
@@ -114,7 +145,7 @@
   .form__cat-info,
   .form__program-type,
   .form__submit-wrapper {
-    width: 45%;
+    width: 47%;
   }
 
   .form__submit-row {
