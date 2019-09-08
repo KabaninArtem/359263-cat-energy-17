@@ -31,6 +31,7 @@
 .form__program-type {
   margin: 0 calc(#{$page-mobile-lr-indent} * -1);
   padding: 20px $page-mobile-lr-indent;
+  color: #222222;
   border-top: 1px solid $border-color;
   border-bottom: 1px solid $border-color;
 }
