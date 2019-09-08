@@ -113,7 +113,18 @@
 
 @media (min-width: $desktop-width) {
   .how-it-works {
+    margin-bottom: 35px;
+  }
+
+  .how-it-works__title {
     margin-bottom: 50px;
+    font-size: 54px;
+  }
+
+  .how-it-works__img-wrapper {
+    max-width: 70px;
+    height: 70px;
+    margin-bottom: 35px;
   }
 
   .how-it-works__list {
@@ -122,11 +133,20 @@
   }
 
   .how-it-works__item {
-    width: 20%;
+    width: 19%;
     margin-right: 0;
+
+    &::after {
+      font-size: 240px;
+    }
   }
 
   .how-it-works__item:not(:last-child) {
     margin-bottom: 0;
+  }
+
+  .how-it-works__text {
+    font-size: 14px;
+    line-height: 1.5;
   }
 }

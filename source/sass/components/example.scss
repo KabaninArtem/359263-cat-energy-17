@@ -96,11 +96,13 @@
   .example {
     z-index: -5;
     margin: 0 calc(#{$page-desktop-lr-indent} * -1) 0;
-    padding: 60px 0 0;
+    padding: 65px 0 0;
   }
 
   .example__title {
     padding-left: $page-desktop-lr-indent;
+    font-size: 54px;
+    margin-bottom: 55px;
   }
 
   .example__info {
@@ -110,7 +112,7 @@
 
   .example__info-body {
     width: 85%;
-    margin-bottom: 55px;
+    margin-bottom: 45px;
   }
 
   .example__groove-block {
@@ -121,12 +123,13 @@
     display: flex;
     width: 75%;
     justify-content: space-between;
+    font-size: 18px;
   }
 
   .example__body {
     display: flex;
     justify-content: space-between;
-    padding: 75px 0 0 $page-desktop-lr-indent;
+    padding: 60px 0 0 $page-desktop-lr-indent;
     background-color: #f2f2f2;
   }
 
@@ -135,7 +138,8 @@
   }
 
   .example__text {
-    line-height: 1.4;
+    font-size: 14px;
+    line-height: 1.6;
   }
 
   .example__comparison {

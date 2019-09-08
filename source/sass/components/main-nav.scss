@@ -86,7 +86,7 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    margin-top: 20px;
+    margin-top: 15px;
   }
 
   .main-nav__list {
@@ -94,7 +94,7 @@
   }
 
   .main-nav__list-item {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .main-nav__list--white .main-nav__list-item {
@@ -104,4 +104,8 @@
   .main-nav__list--white .main-nav__list-item--active {
     border-bottom: 2px solid #ffffff;
   }
-}
+
+  .main-nav__list-item:not(:last-child) {
+    margin-right: 32px;
+  }
+ }

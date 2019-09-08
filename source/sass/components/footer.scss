@@ -42,6 +42,10 @@
 
 @media (min-width: $desktop-width) {
   .footer {
-    padding: 30px $page-desktop-lr-indent;
+    padding: 45px $page-desktop-lr-indent;
+  }
+
+  .footer__logo {
+    width: 115px;
   }
 }

@@ -77,12 +77,13 @@
 
 @media (min-width: $desktop-width) {
   .header {
-    padding: 50px $page-desktop-lr-indent;
+    //padding: 50px $page-desktop-lr-indent;
+    padding: 45px 100px 45px 95px;
     border-bottom: none;
   }
 
   .header__logo {
-    width: 203px;
+    width: 186px;
     height: 60px;
   }
 

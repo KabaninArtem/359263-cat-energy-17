@@ -46,8 +46,13 @@
 
 @media (min-width: $desktop-width) {
   .groove-block__title {
-    width: 60%;
-    margin-bottom: -10px;
+    width: 90%;
+    margin-bottom: -5px;
     background-color: #f2f2f2;
+    font-size: 12px;
+  }
+
+  .groove-block__text {
+    font-size: 28px;
   }
 }

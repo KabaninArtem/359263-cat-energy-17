@@ -149,15 +149,14 @@ $circle-size: 50px;
 }
 
 @media (min-width: $desktop-width) {
-  $circle-size: 100px;
+  $circle-size: 90px;
 
   .programs-item {
-    padding: 50px;
-    width: 46%;
+    padding: 40px 45px 50px;
+    width: 46.5%;
   }
 
   .programs-item:not(:last-child) {
-    //margin-right: 80px;
     margin-bottom: 0;
   }
 
@@ -168,7 +167,10 @@ $circle-size: 50px;
   .programs-item__circle {
     width: $circle-size;
     height: $circle-size;
-    margin-right: 50px;
+  }
+
+  .programs-item__title {
+    font-size: 32px;
   }
 
   .programs-item__circle--header {
@@ -179,7 +181,30 @@ $circle-size: 50px;
     display: none;
   }
 
+  .programs-item__circle--slim {
+    margin-right: 57px;
+  }
+
+  .programs-item__circle--pro {
+    margin-right: 54px;
+  }
+
+  .programs-item__logo--slim {
+    width: 62px;
+    margin-top: -5px;
+  }
+
   .programs-item__logo--pro {
     width: calc(#{$circle-size} * 1.3);
+  }
+
+  .programs-item__text {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .programs-item__to-details {
+    font-size: 18px;
   }
 }
