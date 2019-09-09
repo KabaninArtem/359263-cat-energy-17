@@ -78,3 +78,15 @@
     height: 16px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .check {
+    font-size: 18px;
+  }
+
+  .check__box {
+    width: 35px;
+    height: 35px;
+    margin-right: 18px;
+  }
+}

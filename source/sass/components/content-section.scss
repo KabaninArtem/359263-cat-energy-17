@@ -95,14 +95,22 @@
 
   .content-section__title--contacts {
     width: auto;
+    margin-top: -20px;
+    margin-bottom: 10px;
   }
 
-  .content-section__body--contacts .form-field {
-    width: 47%;
+  .content-section__body--contacts {
+    padding: 35px 0 37px;
+
+    .form-field,
+    .form-field:last-child {
+      width: 47%;
+      margin-bottom: 13px;
+    }
   }
 
   .content-section__body--additional {
-    padding: 0 0 30px;
+    padding: 5px 0 25px;
   }
 
   .content-section__body--additional .check {

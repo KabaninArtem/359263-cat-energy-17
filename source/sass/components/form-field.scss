@@ -101,7 +101,19 @@
 }
 
 @media (min-width: $desktop-width) {
+  .form-field__input--textarea {
+    margin-top: -21px;
+  }
+
+  .form-field:not(:last-child) {
+    margin-bottom: 13px;
+  }
+
   .form-field:last-child {
-    margin-bottom: 20px;
+    margin-bottom: 0;
+  }
+
+  .form-field__label {
+    font-size: 18px;
   }
 }
