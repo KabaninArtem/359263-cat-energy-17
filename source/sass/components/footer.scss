@@ -11,8 +11,8 @@
 }
 
 .footer__logo {
-  width: 150px;
-  margin-bottom: 20px;
+  width: 135px;
+  margin-bottom: 25px;
 
   &:hover {
     opacity: 0.8;
@@ -24,19 +24,23 @@
 }
 
 .footer__social {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .footer {
     flex-direction: row;
     justify-content: space-between;
-    padding: 30px $page-tablet-lr-indent;
+    padding: 55px $page-tablet-lr-indent;
   }
 
   .footer__social,
   .footer__logo {
     margin-bottom: 0;
+  }
+
+  .footer__logo {
+    width: 130px;
   }
 }
 

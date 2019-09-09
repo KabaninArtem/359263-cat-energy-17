@@ -64,8 +64,9 @@
   content: "";
   position: absolute;
   top: 50%;
+  left: 10px;
   transform: translateY(-50%);
-  width: 50%;
+  width: 40%;
   height: 70%;
   border-radius: 10px;
   background-color: $main-color;

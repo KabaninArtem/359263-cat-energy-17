@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 25px 0;
+  padding: 15px 0;
   border-top: 1px solid $border-color;
   border-bottom: 1px solid $border-color;
 }
@@ -30,18 +30,6 @@
   }
 }
 
-.social__link--vkontakte {
-  //background-image: url("../../img/icon-vk.svg");
-}
-
-.social__link--instagram {
-  //background-image: url("../../img/icon-insta.svg");
-}
-
-.social__link--facebook {
-  //background-image: url("../../img/icon-fb.svg");
-}
-
 
 @media (min-width: $tablet-width) {
   .social {
@@ -49,5 +37,9 @@
     padding: 0;
     border-top: none;
     border-bottom: none;
+  }
+
+  .social__link svg {
+    width: 35px;
   }
 }

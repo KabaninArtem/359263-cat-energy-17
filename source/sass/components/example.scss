@@ -1,6 +1,6 @@
 .example {
   margin: 20px calc(#{$page-mobile-lr-indent} * -1) 0;
-  padding: $page-mobile-lr-indent $page-mobile-lr-indent  40px;
+  padding: $page-mobile-lr-indent $page-mobile-lr-indent  35px;
   background-color: #f2f2f2;
 }
 
@@ -12,17 +12,18 @@
 }
 
 .example__text {
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   font-size: 14px;
   font-family: "Arial", "Tahoma", sans-serif;
   font-weight: normal;
   color: $greyish-brown;
+  line-height: 1.3;
 }
 
 .example__info {
   display: flex;
   flex-direction: column;
-  margin-bottom: 60px;
+  margin-bottom: 35px;
 }
 
 .example__info-body {
@@ -32,7 +33,7 @@
 
 .example__groove-block {
   width: 45%;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .example__price {
@@ -44,7 +45,7 @@
 }
 
 .example__range {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -68,6 +69,7 @@
   .example__info {
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 60px;
   }
 
   .example__info-body {

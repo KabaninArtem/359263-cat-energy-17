@@ -12,11 +12,11 @@
 .see-all__icon {
   width: 30px;
   height: auto;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .see-all__text {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-size: 16px;
   font-weight: normal;
   text-transform: uppercase;
@@ -24,7 +24,7 @@
 }
 
 .see-all__small-text {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   font-size: 12px;
   font-family: "Arial", "Tahoma", sans-serif;
   font-weight: 400;
@@ -40,22 +40,48 @@
 
   .see-all__wrapper {
     flex-grow: 1;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 100%;
-    padding: 80px 0 0;
+    padding: 60px 0 0;
   }
 
   .see-all__text {
+    width: 160px;
+    margin-bottom: 25px;
     font-size: 20px;
     text-align: center;
+    line-height: 1.1;
   }
 
   .see-all__small-text {
+    width: 200px;
     font-size: 16px;
     text-align: center;
   }
 
   .see-all__icon {
-    width: 70px;
+    width: 55px;
+    margin-bottom: 51px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .see-all__icon {
+    width: 50px;
+    margin-bottom: 45px;
+  }
+
+  .see-all__text {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+
+  .see-all__small-text {
+    width: 160px;
+    font-size: 14px;
+  }
+
+  .see-all__wrapper {
+    padding: 50px 0 0;
   }
 }

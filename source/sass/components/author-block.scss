@@ -32,6 +32,12 @@
 
   .author-block__text {
     margin-right: 10px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .author-block__text {
     font-size: 14px;
   }
 }

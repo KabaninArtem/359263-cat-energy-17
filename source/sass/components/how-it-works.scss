@@ -48,6 +48,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .how-it-works {
+    margin: 0 calc(#{$page-tablet-lr-indent} * -1) 20px;
+    padding: 0 $page-tablet-lr-indent;
+    border-bottom: 1px solid #f2f2f2;
+  }
   .how-it-works__title {
     margin-bottom: 60px;
     font-size: 60px;
@@ -113,7 +118,9 @@
 
 @media (min-width: $desktop-width) {
   .how-it-works {
-    margin-bottom: 35px;
+    margin: 0 0 35px;
+    padding: 0;
+    border-bottom: none;
   }
 
   .how-it-works__title {
